@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 type MenuItemProps = {
   name: string;
   link: string;
-  active: boolean; // Remove the optional flag since we want to control the active state.
+  active: boolean;
   onClick?: (link: string) => void;
 };
 
@@ -16,7 +17,7 @@ const Items: MenuItemProps[] = [
   {
     name: "a_propos",
     link: "about",
-    active: false, // Set active to false for other menu items.
+    active: false,
   },
   {
     name: "projets",
@@ -50,56 +51,66 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, link, active, onClick }) => {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState(Items.find((item) => item.active) || null);
 
-  const handleItemClick = (link: string) => {
-    const selectedItem = Items.find((item) => item.link === link);
-    if (selectedItem) {
-      setActiveItem(selectedItem);
-    }
-    setIsOpen(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <div className='container mx-auto lg:px-20'>
-      <nav className="flex items-center justify-between p-6">
-        <h1 className="text-xl text-white font-bold">Alexandre</h1>
+    <div className="relative">
+      <div className="fixed top-0 w-full bg-transparent z-50 shadow-md backdrop-blur-md">
+        <div className="container mx-auto lg:px-20">
+          <nav className="flex items-center justify-between p-6">
+            <h1 className="text-xl text-white font-bold">Alexandre</h1>
 
-        <div className="hidden sm:flex items-center space-x-8">
-          {Items.map((item) => (
-            <MenuItem
-              key={item.link} 
-              name={item.name}
-              link={item.link}
-              active={item === activeItem}
-              onClick={handleItemClick} 
-            />
-          ))}
+            <div className="hidden sm:flex items-center space-x-8">
+              {Items.map((item) => (
+                <ScrollLink
+                  to={item.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  key={item.link}
+                  activeClass="text-white font-bold"
+                  className="font-medium text-sm text-gray-500 hover:text-white transition duration-300 ease-in-out hover:cursor-pointer"
+                >
+                  <span className='text-[#C778DD]'>#</span>
+                  {item.name}
+                </ScrollLink>
+              ))}
+            </div>
+
+            <button
+              className="sm:hidden text-[#C778DD]"
+              onClick={toggleMenu}
+            >
+              {isOpen ? "Close" : "Menu"}
+            </button>
+          </nav>
+
+          {isOpen && (
+            <div className="sm:hidden flex flex-col mt-2 ">
+              {Items.map((item) => (
+                <ScrollLink
+                  to={item.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  key={item.link}
+                  activeClass="text-white font-bold"
+                  className="font-medium text-sm text-gray-500 hover:text-white transition duration-300 ease-in-out hover:cursor-pointer"
+                >
+                  <span className='text-[#C778DD]'>#</span>
+                  {item.name}
+                </ScrollLink>
+              ))}
+            </div>
+          )}
         </div>
-
-        <button
-          className="sm:hidden text-[#C778DD]"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? "Close" : "Menu"}
-        </button>
-      </nav>
-
-      {isOpen && (
-        <div className="sm:hidden flex flex-col mt-2 ">
-          {Items.map((item) => (
-            <MenuItem
-              key={item.link} 
-              name={item.name}
-              link={item.link}
-              active={item === activeItem} 
-              onClick={handleItemClick}
-            />
-          ))}
-        </div>
-      )}
+      </div>
     </div>
-
   );
 };
 

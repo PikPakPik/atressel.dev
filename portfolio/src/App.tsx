@@ -4,6 +4,8 @@ import Footer from './components/layouts/Footer';
 import Hero from './components/Home/Hero';
 import Projects from './components/Home/Projects';
 import { Project } from './types/project';
+import About from './components/Home/About';
+import ScrollToTop from './components/layouts/ScrollToTop';
 
 function App() {
 
@@ -115,9 +117,13 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Projects projects={projects} />
+      <div className="flex flex-col gap-[10rem] md:gap-[7rem]">
+        <Hero />
+        <About />
+        <Projects projects={projects} />
+      </div>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

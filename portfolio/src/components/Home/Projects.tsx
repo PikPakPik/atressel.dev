@@ -8,10 +8,10 @@ type ProjectsProps = {
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     projects = projects.filter(project => project.homePage);
     return (
-        <div className="container mx-auto lg:px-32">
-            <div className="flex flex-row items-center justify-center">
+        <div id="projects" className="container mx-auto lg:px-32">
+            <div className="flex flex-row items-center justify-center md:justify-start">
                 <h2 className="text-3xl text-white"><span className="text-[#C778DD]">#</span>projets</h2>
-                <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4"></div>
+                <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 <a href="#" className="hidden md:block text-white font-semibold ml-auto hover:text-[#C778DD] transition duration-300 ease-in-out">Voir plus ~~&gt;</a>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-10 mt-10 justify-items-center">
