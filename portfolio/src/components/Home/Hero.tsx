@@ -1,8 +1,8 @@
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
-import me from '../assets/img/me.png';
-import bg_me from '../assets/img/bg-me.png';
+import me from '../../assets/img/me.png';
+import bg_me from '../../assets/img/bg-me.png';
 
 const Hero: React.FC = () => {
     const el = useRef(null);
