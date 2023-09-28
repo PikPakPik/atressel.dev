@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         };
     }, []);
     return (
-        <div className="container mx-auto lg:px-20 flex md:flex-row md:justify-center gap-20 px-10 md:h-[30rem] mb-10 h-[30rem] flex-col justify-center">
+        <div className="container mx-auto mt-10 lg:px-20 flex md:flex-row md:justify-center gap-20 px-10 md:h-[30rem] mb-20 h-[30rem] flex-col justify-center">
             <div className="flex flex-col self-center">
                 <h1 className="text-3xl font-semibold text-white">Je m'appelle Alexandre alias <br/><span className="text-[#C778DD]">PikPak</span></h1>
                 <h2 className="text-2xl text-white">Je suis <span ref={el}></span></h2>

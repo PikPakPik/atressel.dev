@@ -9,17 +9,17 @@ type MenuItemProps = {
 
 const Items: MenuItemProps[] = [
   {
-    name: "home",
+    name: "accueil",
     link: "home",
     active: true,
   },
   {
-    name: "about",
+    name: "a_propos",
     link: "about",
     active: false, // Set active to false for other menu items.
   },
   {
-    name: "projects",
+    name: "projets",
     link: "projects",
     active: false,
   },
