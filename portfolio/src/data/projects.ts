@@ -1,11 +1,8 @@
-import { Project } from "../../types/project"
-import About from "../Home/About"
-import Contact from "../Home/Contact"
-import Hero from "../Home/Hero"
-import Projects from "../Home/Projects"
+import { Project } from "../types/project";
 
-const projects: Project[] = [
+export const projects: Project[] = [
     {
+      id: 1,
       name: 'Project 1',
       description: 'This is a description for project 1',
       image: 'https://picsum.photos/300/200',
@@ -23,6 +20,7 @@ const projects: Project[] = [
       homePage: true
     },
     {
+      id: 2,
       name: 'Project 2',
       description: 'This is a description for project 2',
       image: 'https://picsum.photos/300/200',
@@ -40,6 +38,7 @@ const projects: Project[] = [
       homePage: true
     },
     {
+      id: 3,
       name: 'Project 3',
       description: 'This is a description for project 3',
       image: 'https://picsum.photos/300/200',
@@ -57,6 +56,7 @@ const projects: Project[] = [
       homePage: true
     },
     {
+      id: 4,
       name: 'Project 4',
       description: 'This is a description for project 4',
       image: 'https://picsum.photos/300/200',
@@ -74,6 +74,7 @@ const projects: Project[] = [
       homePage: false
     },
     {
+      id: 5,
       name: 'Project 5',
       description: 'This is a description for project 5',
       image: 'https://picsum.photos/300/200',
@@ -91,6 +92,7 @@ const projects: Project[] = [
       homePage: false
     },
     {
+      id: 6,
       name: 'Project 6',
       description: 'This is a description for project 6',
       image: 'https://picsum.photos/300/200',
@@ -108,16 +110,3 @@ const projects: Project[] = [
       homePage: false
     }
   ]
-
-const Home = () => {
-    return (
-        <>
-            <Hero />
-            <Projects projects={projects} />
-            <About />
-            <Contact />
-        </>
-    )
-}
-
-export default Home

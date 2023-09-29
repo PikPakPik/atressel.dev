@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <>
             <Header />
-            <main>{children}</main>
+            <main className="flex flex-col gap-32">{children}</main>
             <Footer />
             <ScrollToTop />
         </>
