@@ -1,4 +1,4 @@
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import useWeb3Forms from "@web3forms/react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,8 +16,8 @@ const Contact: React.FC = () => {
     const { submit } = useWeb3Forms({
         access_key: accessKey,
         settings: {
-            from_name: "Acme Inc",
-            subject: "New Contact Message from your Website",
+            from_name: "Portfolio",
+            subject: "Message depuis le portfolio",
         },
         onSuccess: (message, data) => {
             toast.success("Message envoyé avec succès", {
