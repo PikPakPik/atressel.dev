@@ -5,6 +5,11 @@ type ProjectCardProps = {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+
+    const goProject = (id: number) => {
+        window.location.href = `/projects/${id}`;
+    }
+
     return (
         <div className='flex flex-col border-[1px] border-[#ABB2BF] w-[400px]'>
             <div className='border-[#ABB2BF] border-b-[1px]'>
@@ -25,7 +30,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     {project.description}
                 </div>
                 <div className='flex flex-row px-4 mb-4'>
-                    <button className='border-[#C778DD] border-[1px] text-white font-semibold px-4 py-2 mr-4 hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out'>Voir le projet</button>
+                    <button className='border-[#C778DD] border-[1px] text-white font-semibold px-4 py-2 mr-4 hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out' onClick={() => goProject(project.id)}>
+                        Voir le projet
+                    </button>
                 </div>
             </div>
         </div>
