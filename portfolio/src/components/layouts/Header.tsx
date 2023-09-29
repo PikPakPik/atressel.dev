@@ -53,8 +53,8 @@ const Header = () => {
     <div className="relative">
       <div className="absolute lg:flex flex-col items-center ml-4 gap-3 hidden">
         <div className="w-[1px] h-[10rem] bg-gray-500"></div>
-        <a href=""><Icon icon="uiw:github" style={{ fontSize: '30px', color: 'white' }} /></a>
-        <a href=""><Icon icon="uiw:linkedin" style={{ fontSize: '30px', color: 'white' }} /></a>
+        <a href=""><Icon icon="uiw:github" style={{ fontSize: '30px' }} className='text-white hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
+        <a href=""><Icon icon="uiw:linkedin" style={{ fontSize: '30px' }} className='text-white hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
       </div>
       <div className="fixed top-0 w-full bg-transparent z-50 shadow-md backdrop-blur-md">
         <div className="container mx-auto lg:px-20">
