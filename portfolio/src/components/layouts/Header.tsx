@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Icon } from '@iconify/react';
 
 type MenuItemProps = {
   name: string;
@@ -50,6 +51,11 @@ const Header = () => {
 
   return (
     <div className="relative">
+      <div className="absolute lg:flex flex-col items-center ml-4 gap-3 hidden">
+        <div className="w-[1px] h-[10rem] bg-gray-500"></div>
+        <a href=""><Icon icon="uiw:github" style={{ fontSize: '30px', color: 'white' }} /></a>
+        <a href=""><Icon icon="uiw:linkedin" style={{ fontSize: '30px', color: 'white' }} /></a>
+      </div>
       <div className="fixed top-0 w-full bg-transparent z-50 shadow-md backdrop-blur-md">
         <div className="container mx-auto lg:px-20">
           <nav className="flex items-center justify-between p-6">
@@ -61,7 +67,7 @@ const Header = () => {
                   to={item.link}
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-200}
                   duration={500}
                   key={item.link}
                   activeClass="text-white font-bold"
