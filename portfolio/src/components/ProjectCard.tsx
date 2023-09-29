@@ -6,7 +6,7 @@ type ProjectCardProps = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     return (
-        <div className='flex flex-col border-[1px] border-[#ABB2BF] w-[400px]'>
+        <div className='flex flex-col border-[1px] border-[#ABB2BF] w-full'>
             <div className='border-[#ABB2BF] border-b-[1px]'>
                 <img src={project.image} alt={project.name} className='w-full h-full' />
             </div>

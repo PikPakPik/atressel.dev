@@ -19,6 +19,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                     <ProjectCard project={project} key={index} />
                 ))}
             </div>
+            
         </div>
     )
 }
