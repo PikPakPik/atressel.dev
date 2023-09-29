@@ -4,7 +4,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 type MenuItemProps = {
   name: string;
   link: string;
-  active: boolean;
+  active?: boolean | false;
   onClick?: (link: string) => void;
 };
 
@@ -17,22 +17,14 @@ const Items: MenuItemProps[] = [
   {
     name: "a_propos",
     link: "about",
-    active: false,
   },
   {
     name: "projets",
     link: "projects",
-    active: false,
-  },
-  {
-    name: "formations",
-    link: "formations",
-    active: false,
   },
   {
     name: "contact",
     link: "contact",
-    active: false,
   },
 ];
 

@@ -3,7 +3,7 @@ const About: React.FC = () => {
         <div id="about" className="container mx-auto lg:px-32">
             <div className="flex flex-row items-center justify-center md:justify-start">
                 <h2 className="text-3xl text-white"><span className="text-[#C778DD]">#</span>a_propos</h2>
-                <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
+                <div className="w-[25%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
             </div>
             <div className="flex flex-col lg:flex-row mt-10 px-10 md:px-0">
                 <div className="w-full lg:w-1/2 text-gray-400">

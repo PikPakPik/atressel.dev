@@ -6,6 +6,7 @@ import Projects from './components/Home/Projects';
 import { Project } from './types/project';
 import About from './components/Home/About';
 import ScrollToTop from './components/layouts/ScrollToTop';
+import Contact from './components/Home/Contact';
 
 function App() {
 
@@ -121,6 +122,7 @@ function App() {
         <Hero />
         <About />
         <Projects projects={projects} />
+        <Contact />
       </div>
       <Footer />
       <ScrollToTop />
