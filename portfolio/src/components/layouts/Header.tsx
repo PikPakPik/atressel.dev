@@ -29,19 +29,6 @@ const Items: MenuItemProps[] = [
   },
 ];
 
-const MenuItem: React.FC<MenuItemProps> = ({ name, link, active, onClick }) => {
-  return (
-    <a
-      href={"#" + link}
-      className={`font-medium text-sm ${active ? 'text-white font-bold' : 'text-gray-500'} hover:text-white transition duration-300 ease-in-out`}
-      onClick={() => onClick && onClick(link)}
-    >
-      <span className='text-[#C778DD]'>#</span>
-      {name}
-    </a>
-  );
-};
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
