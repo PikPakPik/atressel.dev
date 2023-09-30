@@ -53,11 +53,15 @@ const Header = () => {
   const scrollTo = (link: string) => {
     const element = document.getElementById(link);
     if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      if (element)
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
     } else {
+      if (link === 'contact') {
+        return window.location.href = '/home'
+      }
       window.location.href = `/${link}`;
     }
   }
@@ -101,19 +105,13 @@ const Header = () => {
           {isOpen && (
             <div className="sm:hidden flex flex-col mt-2 ">
               {Items.map((item) => (
-                <ScrollLink
-                  to={item.link}
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
+                <MenuItem
                   key={item.link}
-                  activeClass="text-white font-bold"
-                  className="font-medium text-sm text-gray-500 hover:text-white transition duration-300 ease-in-out hover:cursor-pointer"
-                >
-                  <span className='text-[#C778DD]'>#</span>
-                  {item.name}
-                </ScrollLink>
+                  name={item.name}
+                  link={item.link}
+                  active={item.active}
+                  onClick={scrollTo}
+                />
               ))}
             </div>
           )}

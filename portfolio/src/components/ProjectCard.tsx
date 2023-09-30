@@ -11,7 +11,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     }
 
     return (
-        <div className='flex flex-col border-[1px] border-[#ABB2BF] w-[400px]'>
+        <div className='flex flex-col border-[1px] border-[#ABB2BF] w-screen sm:w-[300px] md:w-[400px]'>
             <div className='border-[#ABB2BF] border-b-[1px]'>
                 <img src={project.image} alt={project.name} className='w-full h-full' />
             </div>
