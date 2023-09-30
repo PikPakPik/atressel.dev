@@ -1,5 +1,5 @@
 import { useState, useEffect, FC, ReactNode } from 'react'
-import ThemeContext from './ThemeContext'
+import ThemeContext from '../context/ThemeContext'
 
 const ThemeContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
