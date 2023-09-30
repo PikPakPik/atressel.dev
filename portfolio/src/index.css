@@ -16,6 +16,14 @@ code {
     monospace;
 }
 
+body.light {
+  background-color: white;
+}
+
+body.dark {
+  background-color: #282C33;
+}
+
 .btn-scrollTop{
   position: fixed;
   bottom: 40px;

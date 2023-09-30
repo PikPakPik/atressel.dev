@@ -6,10 +6,10 @@ const About = () => {
         <>
             <div id="about" className="container mx-auto lg:px-32 my-[10rem] md:my-25 flex flex-col gap-12">
                 <div className="flex flex-row items-center justify-center md:justify-start">
-                    <h2 className="text-3xl text-white"><span className="text-[#C778DD]">#</span>a_propos</h2>
+                    <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>a_propos</h2>
                     <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 </div>
-                <div className="mt-10 justify-items-center sm:px-0 px-10 text-white">
+                <div className="mt-10 justify-items-center sm:px-0 px-10 dark:text-white text-[#282C33]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum urna vitae nibh euismod, at finibus neque elementum. Proin suscipit tempor tincidunt. Nullam vulputate non arcu a convallis. Nulla non justo id dolor viverra ullamcorper. Pellentesque vitae lacinia magna. Suspendisse tincidunt nulla est, sit amet blandit orci convallis et. Ut eu laoreet tellus.
                     <br />
                     <br />
@@ -20,7 +20,7 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-row items-center justify-center md:justify-start">
-                    <h2 className="text-3xl text-white"><span className="text-[#C778DD]">#</span>formation</h2>
+                    <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>formation</h2>
                     <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 </div>
                 <div className="mt-10 justify-items-center sm:px-0 px-10 text-white">
@@ -76,7 +76,7 @@ const About = () => {
 
                 </div>
                 <div className="flex flex-row items-center justify-center md:justify-start">
-                    <h2 className="text-3xl text-white"><span className="text-[#C778DD]">#</span>stages/emplois</h2>
+                    <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>stages/emplois</h2>
                     <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 </div>
                 <div className="mt-10 justify-items-center sm:px-0 px-10 text-white">

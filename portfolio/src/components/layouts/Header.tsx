@@ -37,9 +37,9 @@ const MenuItem = ({ name, link, active, onClick }: MenuItemProps) => {
       smooth={true}
       offset={-200}
       duration={500}
-      activeClass="text-white font-bold"
+      activeClass="dark:text-white text-slate-950 font-bold"
       onClick={() => onClick && onClick(link)}
-      className="font-medium text-sm text-gray-500 hover:text-white transition duration-300 ease-in-out hover:cursor-pointer"
+      className="font-medium text-sm text-gray-500 dark:hover:text-white hover:text-slate-950 transition duration-300 ease-in-out hover:cursor-pointer"
     >
       <span className='text-[#C778DD]'>#</span>
       {name}
@@ -74,13 +74,13 @@ const Header = () => {
     <div className="relative">
       <div className="absolute lg:flex flex-col items-center ml-4 gap-3 hidden">
         <div className="w-[1px] h-[10rem] bg-gray-500"></div>
-        <a href=""><Icon icon="uiw:github" style={{ fontSize: '30px' }} className='text-white hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
-        <a href=""><Icon icon="uiw:linkedin" style={{ fontSize: '30px' }} className='text-white hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
+        <a href=""><Icon icon="uiw:github" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
+        <a href=""><Icon icon="uiw:linkedin" style={{ fontSize: '30px' }} className='dark:text-white hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
       </div>
       <div className="fixed top-0 w-full bg-transparent z-50 shadow-md backdrop-blur-md">
         <div className="container mx-auto lg:px-20">
           <nav className="flex items-center justify-between p-6">
-            <h1 className="text-xl text-white font-bold">Alexandre</h1>
+            <h1 className="text-xl dark:text-white text-[#282C33] font-bold">Alexandre</h1>
 
             <div className="hidden sm:flex items-center space-x-8">
               {Items.map((item) => (
