@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ShowProject from './components/Projects/ShowProject';
+import About from './pages/About';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path=":projectId" element={<ShowProject />} />
           </Route>
+          <Route path="/about" element={<About />} />
         </Routes>
       </Layout>
     </>
