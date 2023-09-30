@@ -4,19 +4,19 @@ import { useEffect, useState } from "react";
 import { projects } from "../../data/projects";
 
 const ShowProject: React.FC = () => {
-  let { projectId } = useParams<{ projectId: string | any }>();
+  const { projectId } = useParams<{ projectId: string | any }>();
   const [project, setProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    projectId = parseInt(projectId);
-    const foundProject = projects.find((project) => project.id === projectId);
+    const projectIdNumber = parseInt(projectId);
+    const foundProject = projects.find((project) => project.id === projectIdNumber);
 
     if (foundProject) {
       setProject(foundProject);
     } else {
       setProject(null);
     }
-  }, [projectId, projects]);
+  }, [projectId]);
 
   return (
     <>
