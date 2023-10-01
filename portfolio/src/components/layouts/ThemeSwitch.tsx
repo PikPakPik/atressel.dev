@@ -4,7 +4,8 @@ import ThemeContext from '../../context/ThemeContext'
 const ThemeSwitch = () => {
     const { currentTheme, changeCurrentTheme } = React.useContext(ThemeContext)
     return (
-        <label className="swap swap-rotate dark:text-white text-[#282C33] fixed bottom-0 left-0 mb-4 ml-4 dark:hover:text-[#C778DD] hover:text-[#C778DD] transition duration-300 ease-in-out">
+        <label 
+        className="swap swap-rotate dark:bg-white rounded-full shadow-md fixed bottom-0 left-0 mb-4 ml-4 dark:hover:text-[#C778DD] hover:text-[#C778DD] transition duration-300 ease-in-out">
 
             <input type="checkbox" onClick={() => changeCurrentTheme(currentTheme === 'dark' ? 'light' : 'dark')} />
 
