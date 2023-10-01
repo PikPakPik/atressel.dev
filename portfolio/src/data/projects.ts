@@ -1,12 +1,13 @@
 import { Project } from "../types/project";
+import portoflio from '../assets/img/projects/portfolio.png';
 
 export const projects: Project[] = [
     {
       id: 1,
-      name: 'Project 1',
-      description: 'This is a description for project 1',
-      image: 'https://picsum.photos/300/200',
-      url: 'https://google.com',
+      name: 'Portfolio',
+      description: 'Creation of my portfolio',
+      image: portoflio,
+      url: 'https://atressel.dev',
       technologies: [
         {
           name: 'React',

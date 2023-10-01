@@ -34,7 +34,7 @@ const ShowProject: React.FC = () => {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="object-cover rounded-lg w-full"
+                  className="object-cover rounded-lg w-full border-2  border-black dark:border-[#ABB2BF]"
                 />
               </div>
               <div className="md:w-1/2 mt-6 md:mt-0">
@@ -53,6 +53,14 @@ const ShowProject: React.FC = () => {
                         {technology.name}
                       </span>
                     ))}
+                  </div>
+                </div>
+                <div className="mt-6">
+                  <h3 className="text-2xl font-semibold dark:text-[#ABB2BF] text-[#282C33]">Links</h3>
+                  <div className="mt-2 space-x-4">
+                    <a href={project.url} target="_blank" rel="noreferrer" className="text-[#C778DD] border border-[#C778DD] px-2 py-1 rounded-md text-sm hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out">
+                      Project
+                    </a>
                   </div>
                 </div>
               </div>

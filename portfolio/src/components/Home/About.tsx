@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
     const { t } = useTranslation();
@@ -13,7 +14,9 @@ const About: React.FC = () => {
                     <p>{t("home.about.first")}</p>
                     <p className="mt-5">{t("home.about.second")}</p>
                     <p className="mt-5">{t("home.about.third")}</p>
-                    <button className="border-[#C778DD] border-2 dark:text-white text-[#282C33] font-semibold px-4 py-2 mt-4 w-fit hover:bg-[#C778DD] dark:hover:text-black hover:text-white transition duration-300 ease-in-out">{t("home.about.button")} -&gt;</button>
+                    <Link to="/about">
+                        <button className="border-[#C778DD] border-2 dark:text-white text-[#282C33] font-semibold px-4 py-2 mt-4 w-fit hover:bg-[#C778DD] dark:hover:text-black hover:text-white transition duration-300 ease-in-out">{t("home.about.button")} -&gt;</button>
+                    </Link>
                 </div>
                 <div className="w-full lg:w-1/2 lg:flex lg:justify-center hidden">
                     <img src="https://picsum.photos/500/500" alt="Alexandre" className="w-[300px] h-[300px] rounded-full" />

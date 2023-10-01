@@ -12,8 +12,6 @@ type MenuItemProps = {
   onClick?: (link: string) => void;
 };
 
-
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
