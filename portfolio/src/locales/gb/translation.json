@@ -32,6 +32,7 @@
     }
   },
   "projects": {
-    "button": "See the project"
+    "button": "See the project",
+    "back_button": "Back to projects"
   }
 }

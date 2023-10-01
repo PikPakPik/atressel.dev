@@ -2,10 +2,21 @@ import { useParams } from "react-router-dom";
 import { Project } from "../../types/project";
 import { useEffect, useState } from "react";
 import { projects } from "../../data/projects";
+import { IconType } from "react-icons";
+import { t } from "i18next";
 
 const ShowProject: React.FC = () => {
   const { projectId } = useParams<{ projectId: string | any }>();
   const [project, setProject] = useState<Project | null>(null);
+
+  const Icon = ({ icon }: { icon: IconType }) => {
+    const IconComponent = icon;
+    return (
+      <div className="flex items-center justify-center w-12 h-12 rounded-full border-[#C778DD] border-2">
+        <IconComponent className="text-2xl dark:text-white" />
+      </div>
+    );
+  }
 
   useEffect(() => {
     const projectIdNumber = parseInt(projectId);
@@ -46,26 +57,32 @@ const ShowProject: React.FC = () => {
                   <h3 className="text-2xl font-semibold dark:text-[#ABB2BF] text-[#282C33]">Technologies</h3>
                   <div className="mt-2 space-x-4">
                     {project.technologies.map((technology, index) => (
-                      <span
-                        key={index}
-                        className="text-[#C778DD] border border-[#C778DD] px-2 py-1 rounded-md text-sm hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out"
-                      >
-                        {technology.name}
-                      </span>
+                      <div className="tooltip tooltip-bottom" data-tip={technology.name} key={index}>
+                        <div>
+                          <Icon icon={technology.image} />
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>
-                <div className="mt-6">
-                  <h3 className="text-2xl font-semibold dark:text-[#ABB2BF] text-[#282C33]">Links</h3>
-                  <div className="mt-2 space-x-4">
-                    <a href={project.url} target="_blank" rel="noreferrer" className="text-[#C778DD] border border-[#C778DD] px-2 py-1 rounded-md text-sm hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out">
-                      Project
-                    </a>
+                {project.url && (
+                  <div className="mt-6">
+                    <h3 className="text-2xl font-semibold dark:text-[#ABB2BF] text-[#282C33]">Links</h3>
+                    <div className="mt-2 space-x-4">
+                      <a href={project.url} target="_blank" rel="noreferrer" className="text-[#C778DD] border border-[#C778DD] px-2 py-1 rounded-md text-sm hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out">
+                        Project
+                      </a>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           )}
+          <div className="flex justify-center mt-8">
+            <a href="/projects" className="text-[#C778DD] border border-[#C778DD] px-2 py-1 rounded-md text-sm hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out">
+              {t("projects.back_button")}
+            </a>
+          </div>
         </div>
       </div>
     </>

@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 export type Project = {
     id: number;
     name: string;
@@ -10,5 +12,5 @@ export type Project = {
 
 type Technologies = {
     name: string;
-    image: string;
+    image: IconType;
 }
