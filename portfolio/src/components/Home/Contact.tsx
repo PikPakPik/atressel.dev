@@ -25,6 +25,8 @@ const Contact: React.FC = () => {
             toast.success("Message envoyé avec succès", {
                 theme: "dark"
             });
+            const form = document.getElementById("contact-form") as HTMLFormElement;
+            form.reset();
         },
         onError: (message, data) => {
             toast.error("Erreur lors de l'envoi du message", {
@@ -45,7 +47,7 @@ const Contact: React.FC = () => {
                     <div className="w-[36%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 </div>
                 <div className="my-8">
-                    <form onSubmit={handleSubmit(submit)} className="flex flex-col gap-3 items-center">
+                    <form id="contact-form" onSubmit={handleSubmit(submit)} className="flex flex-col gap-3 items-center">
                         <label
                             htmlFor="firstname"
                             className={`block font-bold text-sm ${errors.firstname ? "text-red-400" : "text-purple-400"
@@ -55,7 +57,7 @@ const Contact: React.FC = () => {
                         </label>
                         <input {...register("firstname", {
                             required: true
-                        })} className={"block flex-1 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] border-[#282C33]" + (errors.firstname ? " border-red-400 border-[2px]" : "")}
+                        })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]" + (errors.firstname ? " border-red-400 border-[2px]" : "")}
                         />
                         <label
                             htmlFor="lastname"
@@ -66,7 +68,7 @@ const Contact: React.FC = () => {
                         </label>
                         <input {...register("lastname", {
                             required: true
-                        })} className={"block flex-1 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] border-[#282C33]" + (errors.lastname ? " border-red-400 border-[2px]" : "")}
+                        })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]" + (errors.lastname ? " border-red-400 border-[2px]" : "")}
                         />
                         <label
                             htmlFor="email"
@@ -81,7 +83,7 @@ const Contact: React.FC = () => {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                                 message: "invalid email address"
                             },
-                        })} className={"block flex-1 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] border-[#282C33]"  + (errors.email ? " border-red-400 border-[2px]" : "")}
+                        })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300  placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]"  + (errors.email ? " border-red-400 border-[2px]" : "")}
                         />
                         {errors.email && <span className="text-red-400">Email invalide</span>}
                         <label
@@ -93,9 +95,9 @@ const Contact: React.FC = () => {
                         </label>
                         <textarea {...register("message", {
                             required: true
-                        })} className={"block flex-1 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] border-[#282C33]" + (errors.message ? " border-red-400 border-[2px]" : "")}
+                        })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]" + (errors.message ? " border-red-400 border-[2px]" : "")}
                         />
-                        <input type="submit" className="w-1/2 py-2 mt-5 text-white bg-[#C778DD] rounded-md hover:bg-[#A65DB1]" />
+                        <input type="submit" className="w-1/2 py-2 mt-5 text-white bg-[#C778DD] rounded-md hover:bg-[#A65DB1]" value={t("home.contact.form.button")} />
                         <ToastContainer />
                     </form>
                 </div>
