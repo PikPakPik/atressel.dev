@@ -59,7 +59,7 @@ const ShowProject: React.FC = () => {
                     {project.technologies.map((technology, index) => (
                       <div className="tooltip tooltip-bottom" data-tip={technology.name} key={index}>
                         <div>
-                          <Icon icon={technology.image} />
+                          <Icon icon={technology.icon} />
                         </div>
                       </div>
                     ))}
