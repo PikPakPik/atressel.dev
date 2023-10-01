@@ -37,9 +37,9 @@ const About = () => {
                                 <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
                             <div className="mt-3 sm:pr-8">
-                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
-                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Bac Pro SN / ARED</h3>
+                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2018 - 2021</time>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Lycée Professionnel François Arago</p>    
                             </div>
                         </li>
                         <li className="relative mb-6 sm:mb-0">
@@ -52,9 +52,9 @@ const About = () => {
                                 <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
                             <div className="mt-3 sm:pr-8">
-                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.0</h3>
-                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 23, 2021</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">BTS SIO SLAM</h3>
+                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021 - 2023</time>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Lycée Polyvalent St Pierre La Joliverie</p>
                             </div>
                         </li>
                         <li className="relative mb-6 sm:mb-0">
@@ -67,9 +67,9 @@ const About = () => {
                                 <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
                             <div className="mt-3 sm:pr-8">
-                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
-                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2022</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Master Of Sciences</h3>
+                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023 - 2026</time>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Epitech Nantes</p>
                             </div>
                         </li>
                     </ol>
@@ -93,9 +93,9 @@ const About = () => {
                                 <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
                             <div className="mt-3 sm:pr-8">
-                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
-                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Développeur</h3>
+                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Mai 2022 - Juin 2022</time>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Zébratero, Nantes en remote</p>
                             </div>
                         </li>
                         <li className="relative mb-6 sm:mb-0">
@@ -108,9 +108,9 @@ const About = () => {
                                 <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
                             <div className="mt-3 sm:pr-8">
-                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.0</h3>
-                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 23, 2021</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Developpeur</h3>
+                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Janvier 2023 - Février 2023</time>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Infineo, La Chapelle Sur Erdre</p>
                             </div>
                         </li>
                         <li className="relative mb-6 sm:mb-0">
@@ -123,9 +123,9 @@ const About = () => {
                                 <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
                             <div className="mt-3 sm:pr-8">
-                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
-                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2022</time>
-                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Préparateur de commande</h3>
+                                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Aout 2022 - Decembre 2023</time>
+                                <p className="text-base font-normal text-gray-500 dark:text-gray-400">Systeme U, La Chapelle Sur Erdre</p>
                             </div>
                         </li>
                     </ol>
