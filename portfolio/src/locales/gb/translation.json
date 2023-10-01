@@ -1,0 +1,37 @@
+{
+  "home": {
+    "menu": {
+      "home": "home",
+      "about": "about",
+      "projects": "projects",
+      "contact": "contact"
+    },
+    "hero": {
+      "title": "My name is Alexandre alias",
+      "subtitle": "I am",
+      "typed": ["developer", "keen", "creative"],
+      "button": "Contact me"
+    },
+    "about": {
+      "first": "Hi ! ",
+      "second": "I am a Master's student at Epitech Nantes, I have always been passionate about IT and development. ",
+      "third": "This thirst for learning is one of my greatest qualities, I am always curious to discover new technologies and new programming languages.",
+      "button": "Learn more"
+    },
+    "projects": {
+      "show_more": "See more"
+    },
+    "contact": {
+      "form": {
+        "firstname": "First name",
+        "lastname": "Name",
+        "email": "E-mail",
+        "message": "Message",
+        "button": "Send"
+      }
+    }
+  },
+  "projects": {
+    "button": "See the project"
+  }
+}

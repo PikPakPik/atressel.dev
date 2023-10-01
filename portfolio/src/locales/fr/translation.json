@@ -1,0 +1,37 @@
+{
+  "home": {
+    "menu": {
+      "home": "accueil",
+      "about": "a_propos",
+      "projects": "projets",
+      "contact": "contact"
+    },
+    "hero": {
+      "title": "Je m'appelle Alexandre alias",
+      "subtitle": "Je suis",
+      "typed": ["développeur", "passionné", "créatif"],
+      "button": "Me contacter"
+    },
+    "about": {
+      "first": "Salut ! Je m'appelle Alexandre",
+      "second": "Je suis étduiant en Master à Epitech Nantes, j'ai toujours été passioné par l'informatique et le développement. J'ai commencé à apprendre le développement web en 2017, et depuis je n'ai jamais arrêté d'apprendre !",
+      "third": "Cette soif d'apprendre est l'une de mes plus grandes qualités, je suis toujours curieux de découvrir de nouvelles technologies et de nouveaux langages de programmation.",
+      "button": "En savoir plus"
+    },
+    "projects": {
+      "show_more": "Voir plus"
+    },
+    "contact": {
+      "form": {
+        "firstname": "Prénom",
+        "lastname": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "button": "Envoyer"
+      }
+    }
+  },
+  "projects": {
+    "button": "Voir le projet"
+  }
+}
