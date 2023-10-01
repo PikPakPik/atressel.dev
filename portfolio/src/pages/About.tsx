@@ -23,7 +23,7 @@ const About = () => {
                     <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>formation</h2>
                     <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 </div>
-                <div className="mt-10 justify-items-center sm:px-0 px-10 text-white">
+                <div className="mt-10 justify-items-center sm:px-0 px-10 text-white self-center">
 
 
                     <ol className="items-center sm:flex">
@@ -79,7 +79,7 @@ const About = () => {
                     <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>stages/emplois</h2>
                     <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 </div>
-                <div className="mt-10 justify-items-center sm:px-0 px-10 text-white">
+                <div className="mt-10 justify-items-center sm:px-0 px-10 text-white self-center">
 
 
                     <ol className="items-center sm:flex">
