@@ -27,14 +27,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 ))}
             </div>
             <div className='w-full'>
-                <div className='dark:text-white text-lg font-medium px-4 my-4'>
+                <div className='dark:text-white text-lg font-medium px-4 my-4 text-[#282C33]'>
                     {project.name}
                 </div>
                 <div className='dark:text-[#ABB2BF] text-[#282C33] px-4 mb-4'>
                     {project.description}
                 </div>
                 <div className='flex flex-row px-4 mb-4'>
-                    <button className='border-[#C778DD] border-[1px] dark:text-white font-semibold px-4 py-2 mr-4 hover:bg-[#C778DD] dark:hover:text-black hover:text-white transition duration-300 ease-in-out' onClick={() => goProject(project.id)}>
+                    <button className='border-[#C778DD] border-[1px] dark:text-white font-semibold px-4 py-2 mr-4 hover:bg-[#C778DD] dark:hover:text-black hover:text-white transition duration-300 ease-in-out text-[#282C33]' onClick={() => goProject(project.id)}>
                         {t("projects.button")}
                     </button>
                 </div>

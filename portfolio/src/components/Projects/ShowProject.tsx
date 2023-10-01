@@ -13,7 +13,7 @@ const ShowProject: React.FC = () => {
     const IconComponent = icon;
     return (
       <div className="flex items-center justify-center w-12 h-12 rounded-full border-[#C778DD] border-2">
-        <IconComponent className="text-2xl dark:text-white" />
+        <IconComponent className="text-2xl dark:text-white text-[#282C33]" />
       </div>
     );
   }
