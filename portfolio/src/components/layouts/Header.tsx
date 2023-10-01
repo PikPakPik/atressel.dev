@@ -3,6 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { Icon } from '@iconify/react';
 import '../../i18n'
 import { useTranslation } from 'react-i18next';
+import { Slide } from 'react-awesome-reveal';
 
 type MenuItemProps = {
   name: string;
@@ -15,7 +16,7 @@ type MenuItemProps = {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
   const Items: MenuItemProps[] = [
     {
@@ -36,7 +37,7 @@ const Header = () => {
       link: "contact",
     },
   ];
-  
+
   const MenuItem = ({ name, link, active, onClick }: MenuItemProps) => {
     return (
       <ScrollLink
@@ -78,9 +79,13 @@ const Header = () => {
   return (
     <div className="relative">
       <div className="absolute lg:flex flex-col items-center ml-4 gap-3 hidden">
-        <div className="w-[1px] h-[10rem] bg-gray-500"></div>
-        <a href="https://github.com/PikPakPik"><Icon icon="uiw:github" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
-        <a href="https://linkedin.com/in/alexandre-t"><Icon icon="uiw:linkedin" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
+        <Slide direction="down">
+          <div className="w-[1px] h-[10rem] bg-gray-500"></div>
+        </Slide>
+        <Slide direction="left" delay={100}>
+          <a href="https://github.com/PikPakPik"><Icon icon="uiw:github" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
+          <a href="https://linkedin.com/in/alexandre-t"><Icon icon="uiw:linkedin" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
+        </Slide>  
       </div>
       <div className="fixed top-0 w-full bg-transparent z-50 shadow-md backdrop-blur-md">
         <div className="container mx-auto lg:px-20">

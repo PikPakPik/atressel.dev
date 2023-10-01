@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 const About: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <div id="about" className="container mx-auto lg:px-32">
+        <div id="about" className="container mx-auto lg:px-20">
             <div className="flex flex-row items-center justify-center md:justify-start">
                 <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>{t("home.menu.about")}</h2>
                 <div className="w-[25%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>

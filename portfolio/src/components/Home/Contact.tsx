@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
     } = useForm<Inputs>();
     return (
         <>
-            <div id="contact" className="container mx-auto lg:px-32 mb-20">
+            <div id="contact" className="container mx-auto lg:px-20 mb-20">
                 <div className="flex flex-row items-center justify-center md:justify-start">
                     <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>{t("home.menu.contact")}</h2>
                     <div className="w-[36%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
