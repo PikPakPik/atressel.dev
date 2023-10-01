@@ -12,5 +12,5 @@ export type Project = {
 
 type Technologies = {
     name: string;
-    image: IconType;
+    icon: IconType;
 }
