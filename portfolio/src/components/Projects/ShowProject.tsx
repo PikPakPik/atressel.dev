@@ -23,7 +23,7 @@ const ShowProject: React.FC = () => {
       <div id="projects" className="min-h-screen p-16 mt-12">
         <div className="container mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl font-bold dark:text-[#ABB2BF] text-[#282C33]">
               {project ? project.name : "Project Not Found"}
             </h2>
             <div className="w-16 h-1 bg-[#C778DD] mx-auto mt-4"></div>
@@ -39,11 +39,11 @@ const ShowProject: React.FC = () => {
               </div>
               <div className="md:w-1/2 mt-6 md:mt-0">
                 <div className="text-white">
-                  <h3 className="text-2xl font-semibold">Description</h3>
-                  <p className="mt-2">{project.description}</p>
+                  <h3 className="text-2xl font-semibold dark:text-[#ABB2BF] text-[#282C33]">Description</h3>
+                  <p className="mt-2 dark:text-[#ABB2BF] text-[#282C33]">{project.description}</p>
                 </div>
                 <div className="mt-6">
-                  <h3 className="text-2xl font-semibold text-white">Technologies</h3>
+                  <h3 className="text-2xl font-semibold dark:text-[#ABB2BF] text-[#282C33]">Technologies</h3>
                   <div className="mt-2 space-x-4">
                     {project.technologies.map((technology, index) => (
                       <span
