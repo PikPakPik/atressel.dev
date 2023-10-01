@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Project } from "../../types/project";
 import ProjectCard from "../ProjectCard";
-import { Slide } from "react-awesome-reveal";
 
 type ProjectsProps = {
     projects: Project[];
