@@ -1,5 +1,12 @@
 import { Project } from "../types/project";
 import portoflio from '../assets/img/projects/portfolio.png';
+import infineocdataclient from '../assets/img/projects/infineocdata.png';
+import prisel from '../assets/img/projects/prisel.png';
+import gitlabbackup from '../assets/img/projects/gitlabbackup.png';
+import discordbot from '../assets/img/projects/discordbot.png';
+import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
+import { SiCsharp, SiDiscord, SiDotnet, SiGitlab, SiNextdotjs, SiScaleway, SiTypescript, SiUikit } from "react-icons/si";
+
 
 export const projects: Project[] = [
     {
@@ -10,102 +17,101 @@ export const projects: Project[] = [
       url: 'https://atressel.dev',
       technologies: [
         {
+          name: 'TypeScript',
+          icon: BiLogoTypescript
+        },
+        {
           name: 'React',
-          image: 'https://picsum.photos/300/200'
+          icon: BiLogoReact
         },
         {
           name: 'Tailwind',
-          image: 'https://picsum.photos/300/200'
+          icon: BiLogoTailwindCss
         }
       ],
       homePage: true
     },
     {
       id: 2,
-      name: 'Project 2',
-      description: 'This is a description for project 2',
-      image: 'https://picsum.photos/300/200',
-      url: 'https://google.com',
+      name: 'InfineoCData Client',
+      description: 'Envoie de requêtes SQL vers différents types de bases de données',
+      image: infineocdataclient,
       technologies: [
         {
-          name: 'React',
-          image: 'https://picsum.photos/300/200'
+          name: 'C#',
+          icon: SiCsharp
         },
         {
-          name: 'Tailwind',
-          image: 'https://picsum.photos/300/200'
-        }
+          name: '.NET',
+          icon: SiDotnet
+        },
+        {
+          name: 'AvaloniaUI',
+          icon: SiUikit
+        },
+        {
+          name: 'CData',
+          icon: BiSolidData
+        },
       ],
       homePage: true
     },
     {
       id: 3,
-      name: 'Project 3',
-      description: 'This is a description for project 3',
-      image: 'https://picsum.photos/300/200',
-      url: 'https://google.com',
+      name: 'Prisel.fr',
+      description: 'Site vitrine de l\'entreprise Prisel',
+      image: prisel,
+      url: 'https://prisel.fr',
       technologies: [
         {
           name: 'React',
-          image: 'https://picsum.photos/300/200'
+          icon: BiLogoReact
         },
         {
           name: 'Tailwind',
-          image: 'https://picsum.photos/300/200'
+          icon: BiLogoTailwindCss
         }
       ],
       homePage: true
     },
     {
       id: 4,
-      name: 'Project 4',
-      description: 'This is a description for project 4',
-      image: 'https://picsum.photos/300/200',
-      url: 'https://google.com',
+      name: 'BackupGitLab',
+      description: 'Sauvegarde des projets GitLab sur un bucket S3',
+      image: gitlabbackup,
       technologies: [
         {
-          name: 'React',
-          image: 'https://picsum.photos/300/200'
+          name: 'TypeScript',
+          icon: SiTypescript
         },
         {
-          name: 'Tailwind',
-          image: 'https://picsum.photos/300/200'
+          name: 'NextJS',
+          icon: SiNextdotjs
+        },
+        {
+          name: 'GitLab',
+          icon: SiGitlab
+        },
+        {
+          name: 'Scaleway',
+          icon: SiScaleway
         }
       ],
       homePage: false
     },
     {
       id: 5,
-      name: 'Project 5',
-      description: 'This is a description for project 5',
-      image: 'https://picsum.photos/300/200',
-      url: 'https://google.com',
+      name: 'Bot Discord',
+      description: 'Bot Discord pour le serveur de l\'entreprise Prisel',
+      image: discordbot,
       technologies: [
         {
-          name: 'React',
-          image: 'https://picsum.photos/300/200'
+          name: 'JavaScript',
+          icon: BiLogoJavascript
         },
         {
-          name: 'Tailwind',
-          image: 'https://picsum.photos/300/200'
-        }
-      ],
-      homePage: false
-    },
-    {
-      id: 6,
-      name: 'Project 6',
-      description: 'This is a description for project 6',
-      image: 'https://picsum.photos/300/200',
-      url: 'https://google.com',
-      technologies: [
-        {
-          name: 'React',
-          image: 'https://picsum.photos/300/200'
-        },
-        {
-          name: 'Tailwind',
-          image: 'https://picsum.photos/300/200'
+          name: 'Discord.js',
+          icon: SiDiscord
         }
       ],
       homePage: false
