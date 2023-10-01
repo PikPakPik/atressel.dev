@@ -1,48 +1,58 @@
 import React, { useState } from 'react';
 import { IoLanguage } from 'react-icons/io5';
-import { FaFlag } from 'react-icons/fa';
+import { CircleFlag } from 'react-circle-flags';
+import { LANGUAGES } from '../../constants/index';
+import { useTranslation } from 'react-i18next';
 
 const LangageMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedLanguage, setSelectedLanguage] = useState('en'); // Default language
+    const { i18n } = useTranslation();
+    const selectedLanguage = i18n.language;
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
 
-    const changeLanguage = (language: any) => {
-        setSelectedLanguage(language);
-        setIsOpen(false);
-        // You can add logic to change the application's language here
+    const changeLanguage = (language:string) => {
+        i18n.changeLanguage(language);  
     };
 
     return (
         <div className="fixed bottom-16 left-4">
-            <div className="relative">
+            <div className="relative flex">
                 <button
                     onClick={toggleDropdown}
-                    className="bg-white rounded-full p-2 shadow-md focus:outline-none"
+                    className="bg-white rounded-full p-2 shadow-md focus:outline-none dark:hover:text-[#C778DD] hover:text-[#C778DD] transition duration-300 ease-in-out z-20"
                 >
                     <IoLanguage size={24} />
                 </button>
-                {isOpen && (
-                    <div className="absolute mt-2 p-2 rounded-full shadow-lg bg-white border -top-24 left-0">
-                        <ul className="flex flex-col space-y-2 rounded-lg">
-                            <button
-                                className="block text-sm text-start items-center hover:bg-gray-100"
-                                role="menuitem"
+                <div
+                    className={`${
+                        isOpen
+                            ? 'translate-y-0 opacity-100'
+                            : 'translate-y-[43px] opacity-0'
+                    } absolute mt-2 p-2 rounded-full shadow-lg bg-white border -top-20 left-0 transform transition-transform ease-in-out duration-700    z-10`}
+                >
+                    <ul className="flex flex-col space-y-2 rounded-lg">
+                        {LANGUAGES.map((language) => (
+                            <li
+                                key={language.code}
+                                onClick={() => changeLanguage(language.code)}
+                                className="flex items-center space-x-2 rounded-lg cursor-pointer"
                             >
-                                <span className='fi fi-gb text-lg' />
-                            </button>
-                            <button
-                                className="block text-sm text-start items-center hover:bg-gray-100"
-                                role="menuitem"
-                            >
-                                <span className='fi fi-gb text-lg' />
-                            </button>
-                        </ul>
-                    </div>
-                )}
+                                <CircleFlag
+                                    countryCode={language.code}
+                                    height="24"
+                                    className={`rounded-full ${
+                                        selectedLanguage === language.code
+                                            ? 'ring-2 ring-[#C778DD]'
+                                            : ''
+                                    } hover:ring-2 hover:ring-[#C778DD] transition duration-300 ease-in-out`}
+                                />
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </div>
     );
