@@ -16,11 +16,9 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                 <div className="w-[50%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 <a href="projects" className="hidden md:block text-white font-semibold ml-auto hover:text-[#C778DD] transition duration-300 ease-in-out">{t("home.projects.show_more")} ~~&gt;</a>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-10 mt-10 justify-items-center sm:px-0 px-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-10 mt-10 justify-items-center sm:px-0 px-10">
                 {projects.map((project, index) => (
-                    <Slide direction="left" triggerOnce>
-                        <ProjectCard project={project} key={index} />
-                    </Slide>
+                    <ProjectCard project={project} key={index} />
                 ))}
             </div>
         </div>
