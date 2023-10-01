@@ -1,14 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { Project } from "../types/project";
+import { useNavigate } from "react-router-dom";
 
 type ProjectCardProps = {
     project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-
+    const navigate = useNavigate();
     const goProject = (id: number) => {
-        window.location.href = `/projects/${id}`;
+        navigate(`/projects/${id}`);
     }
 
     const { t } = useTranslation();

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Project } from "../../types/project";
 import { useEffect, useState } from "react";
 import { projects } from "../../data/projects";
@@ -79,9 +79,9 @@ const ShowProject: React.FC = () => {
             </div>
           )}
           <div className="flex justify-center mt-8">
-            <a href="/projects" className="text-[#C778DD] border border-[#C778DD] px-2 py-1 rounded-md text-sm hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out">
+            <Link to={"/projects"} className="text-[#C778DD] border border-[#C778DD] px-2 py-1 rounded-md text-sm hover:bg-[#C778DD] hover:text-black transition duration-300 ease-in-out">
               {t("projects.back_button")}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

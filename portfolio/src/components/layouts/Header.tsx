@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react';
 import '../../i18n'
 import { useTranslation } from 'react-i18next';
 import { Slide } from 'react-awesome-reveal';
+import { useNavigate } from 'react-router-dom';
 
 type MenuItemProps = {
   name: string;
@@ -15,6 +16,7 @@ type MenuItemProps = {
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const Items: MenuItemProps[] = [
     {
@@ -64,9 +66,9 @@ const Header = () => {
         });
     } else {
       if (link === 'contact') {
-        return window.location.href = '/home'
+        return navigate('/home');
       }
-      window.location.href = `/${link}`;
+      navigate('/' + link);
     }
   }
 
