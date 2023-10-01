@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form"
 import useWeb3Forms from "@web3forms/react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from "react-i18next";
 
 type Inputs = {
     firstname: string
@@ -12,6 +13,7 @@ type Inputs = {
 
 
 const Contact: React.FC = () => {
+    const { t } = useTranslation();
     const accessKey = "1c1dd612-8f71-4fc8-85ca-3bb65cf7ac99";
     const { submit } = useWeb3Forms({
         access_key: accessKey,
@@ -39,7 +41,7 @@ const Contact: React.FC = () => {
         <>
             <div id="contact" className="container mx-auto lg:px-32 mb-20">
                 <div className="flex flex-row items-center justify-center md:justify-start">
-                    <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>contact</h2>
+                    <h2 className="text-3xl dark:text-white text-[#282C33]"><span className="text-[#C778DD]">#</span>{t("home.menu.contact")}</h2>
                     <div className="w-[36%] h-[2px] bg-[#C778DD] ml-4 hidden md:block"></div>
                 </div>
                 <div className="my-8">
@@ -49,7 +51,7 @@ const Contact: React.FC = () => {
                             className={`block font-bold text-sm ${errors.firstname ? "text-red-400" : "text-purple-400"
                                 }`}
                         >
-                            Prénom
+                            {t("home.contact.form.firstname")}
                         </label>
                         <input {...register("firstname", {
                             required: true
@@ -60,7 +62,7 @@ const Contact: React.FC = () => {
                             className={`block font-bold text-sm ${errors.lastname ? "text-red-400" : "text-purple-400"
                                 }`}
                         >
-                            Nom
+                            {t("home.contact.form.lastname")}
                         </label>
                         <input {...register("lastname", {
                             required: true
@@ -71,7 +73,7 @@ const Contact: React.FC = () => {
                             className={`block font-bold text-sm ${errors.email ? "text-red-400" : "text-purple-400"
                                 }`}
                         >
-                            Email
+                            {t("home.contact.form.email")}
                         </label>
                         <input {...register("email", {
                             required: true,
@@ -79,7 +81,7 @@ const Contact: React.FC = () => {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                                 message: "invalid email address"
                             },
-                        })} className={"block flex-1 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] border-[#282C33]" + (errors.email ? " border-red-400 border-[2px]" : "")}
+                        })} className={"block flex-1 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] border-[#282C33]"  + (errors.email ? " border-red-400 border-[2px]" : "")}
                         />
                         {errors.email && <span className="text-red-400">Email invalide</span>}
                         <label
@@ -87,7 +89,7 @@ const Contact: React.FC = () => {
                             className={`block font-bold text-sm ${errors.message ? "text-red-400" : "text-purple-400"
                                 }`}
                         >
-                            Message
+                            {t("home.contact.form.message")}
                         </label>
                         <textarea {...register("message", {
                             required: true

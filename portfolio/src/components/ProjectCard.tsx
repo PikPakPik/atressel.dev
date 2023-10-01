@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Project } from "../types/project";
 
 type ProjectCardProps = {
@@ -10,8 +11,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         window.location.href = `/projects/${id}`;
     }
 
+    const { t } = useTranslation();
+
     return (
-        <div className='flex flex-col border-[1px] dark:border-[#ABB2BF] border-[#282C33] w-screen sm:w-[300px] md:w-[400px]'>
+        <div className='flex flex-col border-[1px] dark:border-[#ABB2BF] border-[#282C33] sm:w-[300px] lg:md:w-[400px]'>
             <div className='border-[#ABB2BF] border-b-[1px]'>
                 <img src={project.image} alt={project.name} className='w-full h-full' />
             </div>
@@ -31,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </div>
                 <div className='flex flex-row px-4 mb-4'>
                     <button className='border-[#C778DD] border-[1px] dark:text-white font-semibold px-4 py-2 mr-4 hover:bg-[#C778DD] dark:hover:text-black hover:text-white transition duration-300 ease-in-out' onClick={() => goProject(project.id)}>
-                        Voir le projet
+                        {t("projects.button")}
                     </button>
                 </div>
             </div>
