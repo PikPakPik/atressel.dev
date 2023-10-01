@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     return (
         <div className='flex flex-col border-[1px] dark:border-[#ABB2BF] border-[#282C33] sm:w-[300px] lg:md:w-[400px]'>
             <div className='border-[#ABB2BF] border-b-[1px]'>
-                <img src={project.image} alt={project.name} className='w-full h-[200px]' />
+                <img src={project.image} alt={project.name} className='w-full h-[200px] object-cover' />
             </div>
             <div className="flex flex-row border-b-[1px] border-[#ABB2BF] w-full uppercase px-4">
                 {project.technologies.map((technology, index) => (
