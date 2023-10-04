@@ -34,5 +34,8 @@
   "projects": {
     "button": "Voir le projet",
     "back_button": "Retour aux projets"
+  },
+  "actionbar": {
+    "downloadResume": "Télécharger mon CV"
   }
 }

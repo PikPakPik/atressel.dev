@@ -34,5 +34,8 @@
   "projects": {
     "button": "See the project",
     "back_button": "Back to projects"
+  },
+  "actionbar": {
+    "downloadResume": "Download my resume"
   }
 }
