@@ -1,9 +1,8 @@
 import ThemeContextWrapper from "../ThemeContextWrapper";
+import ActionBar from "./ActionBar";
 import Footer from "./Footer";
 import Header from "./Header";
-import LangageMenu from "./LangageMenu";
 import ScrollToTop from "./ScrollToTop";
-import ThemeSwitch from "./ThemeSwitch";
 
 
 type LayoutProps = {
@@ -17,9 +16,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Header />
                 <main className="flex flex-col gap-32">{children}</main>
                 <Footer />
-                <LangageMenu />
                 <ScrollToTop />
-                <ThemeSwitch />
+                <ActionBar />
             </ThemeContextWrapper>
         </>
     );

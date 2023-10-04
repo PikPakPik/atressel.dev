@@ -18,7 +18,7 @@ const LangageMenu = () => {
     };
 
     return (
-        <div className="fixed bottom-16 left-4">
+        <div className="">
             <div className="relative flex">
                 <button
                     onClick={toggleDropdown}
