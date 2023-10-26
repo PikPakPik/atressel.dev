@@ -4,8 +4,9 @@ import infineocdataclient from '../assets/img/projects/infineocdata.png';
 import prisel from '../assets/img/projects/prisel.png';
 import gitlabbackup from '../assets/img/projects/gitlabbackup.png';
 import discordbot from '../assets/img/projects/discordbot.png';
-import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDiscord, SiDotnet, SiGitlab, SiNextdotjs, SiScaleway, SiTypescript, SiUikit } from "react-icons/si";
+import jobboard from '../assets/img/projects/jobboard.png';
+import { BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
+import { SiCsharp, SiDiscord, SiDotnet, SiGitlab, SiNextdotjs, SiPrisma, SiScaleway, SiTypescript, SiUikit } from "react-icons/si";
 
 
 export const projects: Project[] = [
@@ -23,6 +24,31 @@ export const projects: Project[] = [
         {
           name: 'React',
           icon: BiLogoReact
+        },
+        {
+          name: 'Tailwind',
+          icon: BiLogoTailwindCss
+        }
+      ],
+      homePage: true
+    },
+    {
+      id: 6,
+      name: 'JobBoard',
+      description: 'Site de recherche d\'emploi',
+      image: jobboard,
+      technologies: [
+        {
+          name: 'React',
+          icon: BiLogoReact
+        },
+        {
+          name: 'Prisma',
+          icon: SiPrisma
+        },
+        {
+          name: 'NodeJS',
+          icon: BiLogoNodejs
         },
         {
           name: 'Tailwind',
@@ -72,7 +98,7 @@ export const projects: Project[] = [
           icon: BiLogoTailwindCss
         }
       ],
-      homePage: true
+      homePage: false
     },
     {
       id: 4,

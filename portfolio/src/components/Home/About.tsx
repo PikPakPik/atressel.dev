@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import logo from "../../assets/img/logo.png"
 
 const About: React.FC = () => {
     const { t } = useTranslation();
@@ -19,7 +20,7 @@ const About: React.FC = () => {
                     </Link>
                 </div>
                 <div className="w-full lg:w-1/2 lg:flex lg:justify-center hidden">
-                    <img src="https://picsum.photos/500/500" alt="Alexandre" className="w-[300px] h-[300px] rounded-full" />
+                    <img src={logo} alt="Alexandre" className="w-[300px] h-[300px] rounded-full" />
                 </div>
             </div>
         </div>

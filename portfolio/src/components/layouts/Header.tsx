@@ -85,6 +85,7 @@ const Header = () => {
         <Slide direction="left" delay={100}>
           <a href="https://github.com/PikPakPik"><Icon icon="uiw:github" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] dark:hover:text-[#C778DD] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
           <a href="https://linkedin.com/in/alexandre-t"><Icon icon="uiw:linkedin" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] dark:hover:text-[#C778DD] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
+          <a href="mailto:alexandre.tressel@epitech.eu"><Icon icon="mdi:email" style={{ fontSize: '30px' }} className='dark:text-white text-[#282C33] dark:hover:text-[#C778DD] hover:text-[#C778DD] transition duration-300 ease-in-out' /></a>
         </Slide>  
       </div>
       <div className="fixed top-0 w-full bg-transparent z-50 shadow-md backdrop-blur-md">
