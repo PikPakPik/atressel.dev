@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <div className='border-[#ABB2BF] border-b-[1px]'>
                 <img src={project.image} alt={project.name} className='w-full h-[200px] object-cover' />
             </div>
-            <div className="flex flex-row border-b-[1px] border-[#ABB2BF] w-full uppercase px-4">
+            <div className="flex flex-row border-b-[1px] border-[#ABB2BF] w-full uppercase px-4 overflow-auto">
                 {project.technologies.map((technology, index) => (
                     <div className='dark:text-[#ABB2BF] text-[#282C33] my-1' key={index} style={{ marginRight: '10px' }}>
                         {technology.name}
