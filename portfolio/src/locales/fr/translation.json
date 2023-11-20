@@ -9,7 +9,7 @@
     "hero": {
       "title": "Je m'appelle Alexandre alias",
       "subtitle": "Je suis",
-      "typed": ["développeur", "passionné", "créatif"],
+      "typed": ["un développeur", "passionné", "créatif", "prêt à apprendre", "étudiant à Epitech"],
       "button": "Me contacter"
     },
     "about": {

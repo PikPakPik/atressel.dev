@@ -9,7 +9,7 @@
     "hero": {
       "title": "My name is Alexandre alias",
       "subtitle": "I am",
-      "typed": ["developer", "keen", "creative"],
+      "typed": ["a developer", "passionate", "creative", "ready to learn", "a student at Epitech"],
       "button": "Contact me"
     },
     "about": {
