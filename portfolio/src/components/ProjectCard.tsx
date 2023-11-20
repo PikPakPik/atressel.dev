@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     {project.name}
                 </div>
                 <div className='dark:text-[#ABB2BF] text-[#282C33] px-4 mb-4'>
-                    {project.description}
+                    {project.description.length > 100 ? project.description.substring(0, 100) + '...' : project.description}
                 </div>
                 <div className='flex flex-row px-4 mb-4'>
                     <button className='border-[#C778DD] border-[1px] dark:text-white font-semibold px-4 py-2 mr-4 hover:bg-[#C778DD] dark:hover:text-black hover:text-white transition duration-300 ease-in-out text-[#282C33]' onClick={() => goProject(project.id)}>
