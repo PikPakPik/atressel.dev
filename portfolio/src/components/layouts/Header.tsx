@@ -114,7 +114,7 @@ const Header = () => {
           </nav>
 
           {isOpen && (
-            <div className="sm:hidden flex flex-col mt-2 ">
+            <div className="sm:hidden flex flex-col items-center mt-2 gap-6 mb-7">
               {Items.map((item) => (
                 <MenuItem
                   key={item.link}
