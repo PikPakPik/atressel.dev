@@ -5,8 +5,9 @@ import prisel from '../assets/img/projects/prisel.png';
 import gitlabbackup from '../assets/img/projects/gitlabbackup.png';
 import discordbot from '../assets/img/projects/discordbot.png';
 import jobboard from '../assets/img/projects/jobboard.png';
-import { BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDiscord, SiDotnet, SiGitlab, SiNextdotjs, SiPrisma, SiScaleway, SiTypescript, SiUikit } from "react-icons/si";
+import epitale from '../assets/img/projects/epitale.png';
+import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData, BiSolidObjectsHorizontalCenter } from "react-icons/bi";
+import { SiCsharp, SiDiscord, SiDotnet, SiGitlab, SiGradle, SiNextdotjs, SiPrisma, SiScaleway, SiTypescript, SiUikit } from "react-icons/si";
 
 
 export const projects: Project[] = [
@@ -28,6 +29,23 @@ export const projects: Project[] = [
         {
           name: 'Tailwind',
           icon: BiLogoTailwindCss
+        }
+      ],
+      homePage: true
+    },
+    {
+      id: 7,
+      name: 'Epitale (Undertale)',
+      description: 'Création d\'un jeu vidéo en 2D avec libGDX (Java), dans le style de Undertale, regroupant des boss à battre afin de pouvoir accéder à différents boutons pour ouvrir des portes et ainsi avancer dans le jeu.',
+      image: epitale,
+      technologies: [
+        {
+          name: 'Java',
+          icon: BiLogoJava
+        },
+        {
+          name: 'libGDX',
+          icon: SiGradle
         }
       ],
       homePage: true
@@ -80,7 +98,7 @@ export const projects: Project[] = [
           icon: BiSolidData
         },
       ],
-      homePage: true
+      homePage: false
     },
     {
       id: 3,
