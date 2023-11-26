@@ -1,5 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
-
 Sitemap: http://atressel.dev/sitemap.xml
+Disallow:
