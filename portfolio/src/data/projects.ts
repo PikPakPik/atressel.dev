@@ -1,11 +1,11 @@
 import { Project } from "../types/project";
-import portoflio from '../assets/img/projects/portfolio.png';
-import infineocdataclient from '../assets/img/projects/infineocdata.png';
-import prisel from '../assets/img/projects/prisel.png';
-import gitlabbackup from '../assets/img/projects/gitlabbackup.png';
-import discordbot from '../assets/img/projects/discordbot.png';
-import jobboard from '../assets/img/projects/jobboard.png';
-import epitale from '../assets/img/projects/epitale.png';
+import portoflio from '../assets/img/projects/portfolio.webp';
+import infineocdataclient from '../assets/img/projects/infineocdata.webp';
+import prisel from '../assets/img/projects/prisel.webp';
+import gitlabbackup from '../assets/img/projects/gitlabbackup.webp';
+import discordbot from '../assets/img/projects/discordbot.webp';
+import jobboard from '../assets/img/projects/jobboard.webp';
+import epitale from '../assets/img/projects/epitale.webp';
 import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
 import { SiCsharp, SiDiscord, SiDotnet, SiGitlab, SiGradle, SiNextdotjs, SiPrisma, SiScaleway, SiTypescript, SiUikit } from "react-icons/si";
 

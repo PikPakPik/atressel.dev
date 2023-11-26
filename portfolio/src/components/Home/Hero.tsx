@@ -1,8 +1,8 @@
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
-import me from '../../assets/img/me.png';
-import bg_me from '../../assets/img/bg-me.png';
+import me from '../../assets/img/me.webp';
+import bg_me from '../../assets/img/bg-me.webp';
 import { useTranslation } from "react-i18next";
 
 import { JackInTheBox } from "react-awesome-reveal";

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo.png"
+import logo from "../../assets/img/logo.webp"
 
 const About: React.FC = () => {
     const { t } = useTranslation();
