@@ -23,6 +23,7 @@ const LangageMenu = () => {
                 <button
                     onClick={toggleDropdown}
                     className="bg-white rounded-full p-2 shadow-md focus:outline-none dark:hover:text-[#C778DD] hover:text-[#C778DD] transition duration-300 ease-in-out z-20"
+                    name='langage'
                 >
                     <IoLanguage size={24} />
                 </button>
