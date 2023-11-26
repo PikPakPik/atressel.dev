@@ -59,6 +59,7 @@ const Contact: React.FC = () => {
                             required: true
                         })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]" + (errors.firstname ? " border-red-400 border-[2px]" : "")}
                         name={t("home.contact.form.firstname")}
+                        aria-label={t("home.contact.form.firstname")}
                         />
                         <label
                             htmlFor="lastname"
@@ -71,6 +72,7 @@ const Contact: React.FC = () => {
                             required: true
                         })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]" + (errors.lastname ? " border-red-400 border-[2px]" : "")}
                         name={t("home.contact.form.lastname")}
+                        aria-label={t("home.contact.form.lastname")}
                         />
                         <label
                             htmlFor="email"
@@ -87,6 +89,7 @@ const Contact: React.FC = () => {
                             },
                         })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300  placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]"  + (errors.email ? " border-red-400 border-[2px]" : "")}
                         name={t("home.contact.form.email")}
+                        aria-label={t("home.contact.form.email")}
                         />
                         {errors.email && <span className="text-red-400">Email invalide</span>}
                         <label
@@ -100,6 +103,7 @@ const Contact: React.FC = () => {
                             required: true
                         })} className={"block flex-1 py-1.5 pl-1 bg-gray-200 text-black dark:bg-slate-600 dark:text-gray-300 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 rounded-md w-1/2 border-[1px] dark:border-[#282C33]" + (errors.message ? " border-red-400 border-[2px]" : "")}
                         name={t("home.contact.form.message")}
+                        aria-label={t("home.contact.form.message")}
                         />
                         <input type="submit" className="w-1/2 py-2 mt-5 text-white bg-[#C778DD] rounded-md hover:bg-[#A65DB1]" value={t("home.contact.form.button")} />
                         <ToastContainer />
