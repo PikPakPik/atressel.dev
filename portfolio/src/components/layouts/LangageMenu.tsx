@@ -42,6 +42,7 @@ const LangageMenu = () => {
                                 className="flex items-center space-x-2 rounded-lg cursor-pointer"
                             >
                                 <CircleFlag
+                                    aria-label={language.code}
                                     countryCode={language.code}
                                     height="24"
                                     className={`rounded-full ${
