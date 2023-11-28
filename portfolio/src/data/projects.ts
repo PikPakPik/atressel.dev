@@ -1,5 +1,8 @@
 import { Project } from "../types/project";
-import portoflio from '../assets/img/projects/portfolio.webp';
+
+import portoflio from '../assets/img/projects/portfolio/portfolio.webp';
+import portfolioprojects from '../assets/img/projects/portfolio/portfolio_project.webp';
+
 import infineocdataclient from '../assets/img/projects/infineocdata.webp';
 import prisel from '../assets/img/projects/prisel.webp';
 import gitlabbackup from '../assets/img/projects/gitlabbackup.webp';
@@ -16,6 +19,10 @@ export const projects: Project[] = [
       name: 'Portfolio',
       description: 'Création et publication de mon portfolio afin de me créer une identité numérique et permettre d\'avoir un support pour présenter mes projets.',
       image: portoflio,
+      images: [
+        portoflio,
+        portfolioprojects
+      ],
       url: 'https://atressel.dev',
       technologies: [
         {
@@ -38,6 +45,9 @@ export const projects: Project[] = [
       name: 'Epitale (Undertale)',
       description: 'Création d\'un jeu vidéo en 2D avec libGDX (Java), dans le style de Undertale, regroupant des boss à battre afin de pouvoir accéder à différents boutons pour ouvrir des portes et ainsi avancer dans le jeu. Projet réalisé dans le cadre de ma formation à EPITECH.',
       image: epitale,
+      images: [
+        epitale
+      ],
       technologies: [
         {
           name: 'Java',
@@ -55,6 +65,9 @@ export const projects: Project[] = [
       name: 'JobBoard',
       description: 'Site de recherche d\'emploi avec des offres d\'emploi et des candidatures, ainsi qu\'un espace administrateur pour gérer les offres et les candidatures. Projet réalisé dans le cadre de ma formation à EPITECH.',
       image: jobboard,
+      images: [
+        jobboard
+      ],
       technologies: [
         {
           name: 'React',
@@ -80,6 +93,9 @@ export const projects: Project[] = [
       name: 'InfineoCData Client',
       description: 'Client lourd permettant de se connecter à une base de données grâce à CData et d\'effectuer des requêtes SQL. Projet réalisé dans le cadre de mon stage de fin de BTS SIO.',
       image: infineocdataclient,
+      images: [
+        infineocdataclient
+      ],
       technologies: [
         {
           name: 'C#',
@@ -105,6 +121,9 @@ export const projects: Project[] = [
       name: 'Prisel.fr',
       description: 'Site vitrine de l\'entreprise Prisel, évoluant dans le domaine du jeu vidéo.',
       image: prisel,
+      images: [
+        prisel
+      ],
       url: 'https://prisel.fr',
       technologies: [
         {
@@ -123,6 +142,9 @@ export const projects: Project[] = [
       name: 'BackupGitLab',
       description: 'Sauvegarde des projets GitLab sur un bucket S3 de Scaleway. Projet réalisé dans le cadre de mon stage de fin de BTS SIO.',
       image: gitlabbackup,
+      images: [
+        gitlabbackup
+      ],
       technologies: [
         {
           name: 'TypeScript',
@@ -148,6 +170,9 @@ export const projects: Project[] = [
       name: 'Bot Discord',
       description: 'Bot Discord pour le serveur de l\'entreprise Prisel, permettant de gérer les rôles et les salons, ou encore de faire des sondages.',
       image: discordbot,
+      images: [
+        discordbot
+      ],
       technologies: [
         {
           name: 'JavaScript',

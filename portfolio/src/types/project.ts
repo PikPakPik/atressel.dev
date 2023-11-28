@@ -8,6 +8,7 @@ export type Project = {
     url?: string;
     technologies: Technologies[];
     homePage: boolean;
+    images?: string[];
 }
 
 type Technologies = {

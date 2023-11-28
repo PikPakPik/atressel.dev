@@ -4,10 +4,32 @@ import { useEffect, useState } from "react";
 import { projects } from "../../data/projects";
 import { IconType } from "react-icons";
 import { t } from "i18next";
+import ImageGallery from 'react-image-gallery';
+import Modal from 'react-modal';
+import 'react-image-gallery/styles/css/image-gallery.css';
+import { IoClose } from "react-icons/io5";
+
 
 const ShowProject: React.FC = () => {
   const { projectId } = useParams<{ projectId: string | any }>();
   const [project, setProject] = useState<Project | null>(null);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const closeModal = () => setModalIsOpen(false);
+
+  const openModal = (image: string) => {
+    setSelectedImage(image);
+    setModalIsOpen(true);
+  };
+
+  const images = project?.images?.map(image => ({
+    original: image,
+    renderItem: () => (
+      // eslint-disable-next-line jsx-a11y/alt-text
+      <img src={image} onClick={() => openModal(image)} />
+    )
+  }));
 
   const Icon = ({ icon }: { icon: IconType }) => {
     const IconComponent = icon;
@@ -42,11 +64,26 @@ const ShowProject: React.FC = () => {
           {project && (
             <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
               <div className="md:w-1/2">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="object-cover rounded-lg w-full border-2  border-black dark:border-[#ABB2BF]"
+                <ImageGallery
+                  items={images || []}
+                  showPlayButton={false}
+                  showFullscreenButton={false}
+                  additionalClass="border border-[#C778DD] shadow-xl max-h-38"
                 />
+                <Modal
+                  isOpen={modalIsOpen}
+                  onRequestClose={closeModal}
+                  contentLabel="Image Preview"
+                  overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+                  className="outline-none p-4 bg-slate-900 rounded-lg shadow-xl flex flex-col items-center relative"
+                >
+                  {/* Bouton de fermeture en forme de croix */}
+                  <button onClick={closeModal} className="absolute top-2 right-2 transition duration-300 ease-in-out hover:cursor-pointer">
+                    <IoClose className="text-white text-2xl hover:text-[#C778DD] transition duration-300 ease-in-out" />
+                  </button>
+
+                  <img src={selectedImage} alt="Aperçu" className="max-w-7xl max-h-screen object-contain rounded-lg" /> 
+                </Modal>
               </div>
               <div className="md:w-1/2 mt-6 md:mt-0">
                 <div className="text-white">
