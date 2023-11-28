@@ -7,7 +7,6 @@ import { BrowserRouter } from 'react-router-dom';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
-import { inject } from '@vercel/analytics';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,4 +20,3 @@ root.render(
 );
 
 reportWebVitals();
-inject();
