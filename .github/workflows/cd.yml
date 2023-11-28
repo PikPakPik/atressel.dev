@@ -2,7 +2,7 @@ name: Node.js CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [ glbskf ]
 
 jobs:
   build:
