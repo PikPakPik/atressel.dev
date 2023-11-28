@@ -82,7 +82,7 @@ const ShowProject: React.FC = () => {
                     <IoClose className="text-white text-2xl hover:text-[#C778DD] transition duration-300 ease-in-out" />
                   </button>
 
-                  <img src={selectedImage} alt="Aperçu" className="max-w-7xl max-h-screen object-contain rounded-lg" /> 
+                  <img src={selectedImage} alt="Aperçu" className="max-w-7xl sm:max-w-md md:max-w-lg lg:max-w-4xl max-h-screen object-contain rounded-lg" />
                 </Modal>
               </div>
               <div className="md:w-1/2 mt-6 md:mt-0">
