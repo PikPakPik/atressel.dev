@@ -5,9 +5,9 @@ const About = () => {
         <div id="about" className="container mx-auto px-4 md:px-12 py-12 lg:px-32 my-[10rem] md:my-25 flex flex-col gap-12">
             <section className="mb-12">
                 <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-                    <span className="text-purple-600">#</span>a_propos
+                    <span className="text-[#C778DD]">#</span>a_propos
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300 text-lg border-l-4 border-purple-600 pl-4">
+                <p className="text-gray-700 dark:text-gray-300 text-lg border-l-4 border-[#C778DD] pl-4">
                     Je suis étudiant à Epitech en première année de Master Of Science en préparation du diplôme de RNCP niv 7 Architecte Logiciel et Développement. 
                     <br />
                     Passionné par le monde du développement, j'aime apprendre de nouvelles choses et j'en ai fait ma force. Je suis une personne très ouverte d'esprit et j'aime travailler en équipe pour résoudre des problèmes complexes. 
@@ -20,9 +20,9 @@ const About = () => {
 
             <section className="mb-12">
                 <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-                    <span className="text-purple-600">#</span>formation
+                    <span className="text-[#C778DD]">#</span>formation
                 </h2>
-                <ol className="relative border-l-4 border-purple-600 pl-4">
+                <ol className="relative border-l-4 border-[#C778DD] pl-4">
                     <li className="mb-6">
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Master Of Sciences</h3>
@@ -51,9 +51,9 @@ const About = () => {
 
             <section className="mb-12">
                 <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-                    <span className="text-purple-600">#</span>stages/emplois
+                    <span className="text-[#C778DD]">#</span>stages/emplois
                 </h2>
-                <ol className="relative border-l-4 border-purple-600 pl-4">
+                <ol className="relative border-l-4 border-[#C778DD] pl-4">
                     {/*<li className="mb-6">
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Développeur (Alternance)</h3>
@@ -87,9 +87,9 @@ const About = () => {
 
             <section className="mb-12">
                 <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-                    <span className="text-purple-600">#</span>bénévolat
+                    <span className="text-[#C778DD]">#</span>bénévolat
                 </h2>
-                <ol className="relative border-l-4 border-purple-600 pl-4">
+                <ol className="relative border-l-4 border-[#C778DD] pl-4">
                     <li className="mb-6">
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">DevFest 2023</h3>
