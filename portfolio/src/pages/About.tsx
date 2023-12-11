@@ -8,12 +8,12 @@ const About = () => {
                     <span className="text-[#C778DD]">#</span>a_propos
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 text-lg border-l-4 border-[#C778DD] pl-4">
-                    Je suis étudiant à Epitech en première année de Master Of Science en préparation du diplôme de RNCP niv 7 Architecte Logiciel et Développement. 
+                    Je suis étudiant à Epitech en première année de Master Of Science en préparation du diplôme de RNCP niv 7 Architecte Logiciel et Développement.
                     <br />
-                    Passionné par le monde du développement, j'aime apprendre de nouvelles choses et j'en ai fait ma force. Je suis une personne très ouverte d'esprit et j'aime travailler en équipe pour résoudre des problèmes complexes. 
-                    <br/>
-                    Mon objectif est de devenir un développeur expérimenté et de contribuer à des projets innovants qui ont un impact positif sur la société. 
-                    <br/>
+                    Passionné par le monde du développement, j'aime apprendre de nouvelles choses et j'en ai fait ma force. Je suis une personne très ouverte d'esprit et j'aime travailler en équipe pour résoudre des problèmes complexes.
+                    <br />
+                    Mon objectif est de devenir un développeur expérimenté et de contribuer à des projets innovants qui ont un impact positif sur la société.
+                    <br />
                     En dehors du développement, j'aime voyager, découvrir de nouvelles cultures et pratiquer du sport comme le vélo ou la randonnée.
                 </p>
             </section>
