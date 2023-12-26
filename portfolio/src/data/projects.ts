@@ -9,8 +9,9 @@ import gitlabbackup from '../assets/img/projects/gitlabbackup.webp';
 import discordbot from '../assets/img/projects/discordbot.webp';
 import jobboard from '../assets/img/projects/jobboard.webp';
 import epitale from '../assets/img/projects/epitale.webp';
+import nsa501 from '../assets/img/projects/nsa501.webp';
 import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDiscord, SiDotnet, SiGitlab, SiGradle, SiNextdotjs, SiPrisma, SiScaleway, SiTypescript, SiUikit } from "react-icons/si";
+import { SiCsharp, SiDebian, SiDiscord, SiDotnet, SiFreebsd, SiGitlab, SiGradle, SiMysql, SiNextdotjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiScaleway, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
 
 
 export const projects: Project[] = [
@@ -113,6 +114,46 @@ export const projects: Project[] = [
           name: 'CData',
           icon: BiSolidData
         },
+      ],
+      homePage: false
+    },
+    {
+      id: 8,
+      name: 'DHCP Infrastucture',
+      description: 'Création d\'une infrastructure DHCP avec un serveur DHCP (OpenBSD) et un serveur WEB (FreeBSD) et deux machines clients (Libre OS). Le but étant de créer un serveur DHCP avec 3 interfaces réseaux avec différentes spécifications, pour chaque machine. Définir des règles de pare-feu afin de permettre la communication entre les machines, mais aussi de bloquer certaines communications. Projet réalisé dans le cadre de ma formation à EPITECH.',
+      image: nsa501,
+      images: [
+        nsa501
+      ],
+      technologies: [
+        {
+          name: 'OpenBSD',
+          icon: SiOpenbsd
+        },
+        {
+          name: 'Freebsd',
+          icon: SiFreebsd
+        },
+        {
+          name: 'Debian',
+          icon: SiDebian
+        },
+        {
+          name: 'Windows',
+          icon: SiWindows10
+        },
+        {
+          name: 'Nginx',
+          icon: SiNginx
+        },
+        {
+          name: 'PHP',
+          icon: SiPhp
+        },
+        {
+          name: 'MySQL',
+          icon: SiMysql
+        }
       ],
       homePage: false
     },
