@@ -92,7 +92,7 @@ export const projects: Project[] = [
     {
       id: 2,
       name: 'InfineoCData Client',
-      description: 'Client lourd permettant de se connecter à une base de données grâce à CData et d\'effectuer des requêtes SQL. Projet réalisé dans le cadre de mon stage de fin de BTS SIO.',
+      description: 'Client CData permettant de se connecter à de mulitple sources de données grâce aux providers de CData et d\'effectuer des requêtes SQL. Projet réalisé dans le cadre de mon stage de fin d\'année de BTS SIO.',
       image: infineocdataclient,
       images: [
         infineocdataclient
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     {
       id: 4,
       name: 'BackupGitLab',
-      description: 'Sauvegarde des projets GitLab sur un bucket S3 de Scaleway. Projet réalisé dans le cadre de mon stage de fin de BTS SIO.',
+      description: 'Sauvegarde automatique de projet GitLab sur un bucket S3. Projet réalisé dans le cadre de mon stage de fin de BTS SIO.',
       image: gitlabbackup,
       images: [
         gitlabbackup
