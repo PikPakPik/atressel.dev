@@ -54,13 +54,13 @@ const About = () => {
                     <span className="text-[#C778DD]">#</span>stages/emplois
                 </h2>
                 <ol className="relative border-l-4 border-[#C778DD] pl-4">
-                    {/*<li className="mb-6">
+                    <li className="mb-6">
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Développeur (Alternance)</h3>
                             <p className="text-gray-500 dark:text-gray-400">Infineo, La Chapelle Sur Erdre</p>
                             <span className="text-sm text-gray-400">Janvier 2024 - Maintenant</span>
                         </div>
-                    </li>*/}
+                    </li>
                     <li className="mb-6">
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Préparateur de commande (CDI Temps Partiel)</h3>

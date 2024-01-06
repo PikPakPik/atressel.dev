@@ -11,7 +11,7 @@ import jobboard from '../assets/img/projects/jobboard.webp';
 import epitale from '../assets/img/projects/epitale.webp';
 import nsa501 from '../assets/img/projects/nsa501.webp';
 import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDebian, SiDiscord, SiDotnet, SiFreebsd, SiGitlab, SiGradle, SiMysql, SiNextdotjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiScaleway, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
+import { SiCsharp, SiDebian, SiDiscord, SiDotnet, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMinio, SiMysql, SiNestjs, SiNextdotjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiScaleway, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
 
 
 export const projects: Project[] = [
@@ -192,8 +192,8 @@ export const projects: Project[] = [
           icon: SiTypescript
         },
         {
-          name: 'NextJS',
-          icon: SiNextdotjs
+          name: 'NestJS',
+          icon: SiNestjs
         },
         {
           name: 'GitLab',
@@ -202,6 +202,14 @@ export const projects: Project[] = [
         {
           name: 'Scaleway',
           icon: SiScaleway
+        },
+        {
+          name: 'GraphQL',
+          icon: SiGraphql
+        },
+        {
+          name: 'MinIO',
+          icon: SiMinio
         }
       ],
       homePage: false
