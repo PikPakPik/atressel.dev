@@ -11,7 +11,8 @@ import jobboard from '../assets/img/projects/jobboard.webp';
 import epitale from '../assets/img/projects/epitale.webp';
 import nsa501 from '../assets/img/projects/nsa501.webp';
 import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDebian, SiDiscord, SiDotnet, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMinio, SiMysql, SiNestjs, SiNextdotjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiScaleway, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
+import { SiCsharp, SiDebian, SiDiscord, SiDotnet, SiExpress, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMinio, SiMysql, SiNestjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiReact, SiScaleway, SiSocketdotio, SiTailwindcss, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io5";
 
 
 export const projects: Project[] = [
@@ -40,6 +41,42 @@ export const projects: Project[] = [
         }
       ],
       homePage: true
+    },
+    {
+      id: 9,
+      name: 'IRC Chat',
+      description: 'Création d\'un chat IRC en JS avec NodeJS et Socket.io. Projet réalisé dans le cadre de ma formation à EPITECH.',
+      image: infineocdataclient,
+      images: [
+        infineocdataclient
+      ],
+      technologies: [
+        {
+          name: 'NodeJS',
+          icon: IoLogoNodejs
+        },
+        {
+          name: 'Socket.io',
+          icon: SiSocketdotio
+        },
+        {
+          name: 'React',
+          icon: SiReact
+        },
+        {
+          name: 'TailwindCSS',
+          icon: SiTailwindcss
+        },
+        {
+          name: 'TypeScript',
+          icon: SiTypescript
+        },
+        {
+          name: 'Express',
+          icon: SiExpress
+        }
+      ],
+      homePage: false
     },
     {
       id: 7,
