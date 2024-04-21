@@ -33,7 +33,7 @@ const About = () => {
                     <li className="mb-6">
 
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">BTS SIO SLAM</h3>
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">BTS SIO option SLAM</h3>
                             <p className="text-gray-500 dark:text-gray-400">Lycée Polyvalent St Pierre La Joliverie</p>
                             <span className="text-sm text-gray-400">2021 - 2023</span>
                         </div>
@@ -41,7 +41,7 @@ const About = () => {
                     <li className="mb-6">
 
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Bac Pro SN / ARED</h3>
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Bac Pro SN option ARED</h3>
                             <p className="text-gray-500 dark:text-gray-400">Lycée Professionnel François Arago</p>
                             <span className="text-sm text-gray-400">2018 - 2021</span>
                         </div>
@@ -70,14 +70,14 @@ const About = () => {
                     </li>
                     <li className="mb-6">
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Développeur (stage)</h3>
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Développeur (Stage)</h3>
                             <p className="text-gray-500 dark:text-gray-400">Infineo, La Chapelle Sur Erdre</p>
                             <span className="text-sm text-gray-400">Janvier 2023 - Février 2023</span>
                         </div>
                     </li>
                     <li className="mb-6">
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 mb-6">
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Développeur (stage)</h3>
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Développeur (Stage)</h3>
                             <p className="text-gray-500 dark:text-gray-400">Zébratero, Nantes en remote</p>
                             <span className="text-sm text-gray-400">Mai 2022 - Juin 2022</span>
                         </div>
