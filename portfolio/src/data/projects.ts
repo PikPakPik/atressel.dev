@@ -3,6 +3,12 @@ import { Project } from "../types/project";
 import portoflio from '../assets/img/projects/portfolio/portfolio.webp';
 import portfolioprojects from '../assets/img/projects/portfolio/portfolio_project.webp';
 
+import trelltech1 from '../assets/img/projects/trelltech/trelltech1.webp';
+import trelltech2 from '../assets/img/projects/trelltech/trelltech2.webp';
+import trelltech3 from '../assets/img/projects/trelltech/trelltech3.webp';
+import trelltech4 from '../assets/img/projects/trelltech/trelltech4.webp';
+import trelltech5 from '../assets/img/projects/trelltech/trelltech5.webp';
+
 import infineocdataclient from '../assets/img/projects/infineocdata.webp';
 import prisel from '../assets/img/projects/prisel.webp';
 import gitlabbackup from '../assets/img/projects/gitlabbackup.webp';
@@ -11,7 +17,7 @@ import jobboard from '../assets/img/projects/jobboard.webp';
 import epitale from '../assets/img/projects/epitale.webp';
 import nsa501 from '../assets/img/projects/nsa501.webp';
 import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDebian, SiDiscord, SiDotnet, SiExpress, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMinio, SiMysql, SiNestjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiReact, SiScaleway, SiSocketdotio, SiTailwindcss, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
+import { SiCsharp, SiDart, SiDebian, SiDiscord, SiDotnet, SiExpress, SiFlutter, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMinio, SiMysql, SiNestjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiReact, SiScaleway, SiSocketdotio, SiTailwindcss, SiTrello, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
 
 
@@ -40,7 +46,7 @@ export const projects: Project[] = [
           icon: BiLogoTailwindCss
         }
       ],
-      homePage: true
+      homePage: false
     },
     {
       id: 9,
@@ -76,7 +82,7 @@ export const projects: Project[] = [
           icon: SiExpress
         }
       ],
-      homePage: false
+      homePage: true
     },
     {
       id: 7,
@@ -124,7 +130,7 @@ export const projects: Project[] = [
           icon: BiLogoTailwindCss
         }
       ],
-      homePage: true
+      homePage: false
     },
     {
       id: 2,
@@ -270,5 +276,34 @@ export const projects: Project[] = [
         }
       ],
       homePage: false
+    },
+    {
+      id: 10,
+      name: 'TrellTech',
+      description: 'Application mobile inspirée de Trello 📋 en exploitant son API pour développer un clone de Trello. Projet réalisé dans le cadre de ma formation à EPITECH.',
+      image: trelltech1,
+      images: [
+        trelltech1,
+        trelltech2,
+        trelltech3,
+        trelltech4,
+        trelltech5
+      ],
+      url: 'https://github.com/eloiJhn/T-DEV-600-NAN_2',
+      technologies: [
+        {
+          name: 'Flutter',
+          icon: SiFlutter
+        },
+        {
+          name: 'Dart',
+          icon: SiDart
+        },
+        {
+          name: 'Trello',
+          icon: SiTrello
+        }
+      ],
+      homePage: true
     }
   ]
