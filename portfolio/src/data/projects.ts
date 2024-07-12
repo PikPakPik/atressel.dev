@@ -16,8 +16,11 @@ import discordbot from '../assets/img/projects/discordbot.webp';
 import jobboard from '../assets/img/projects/jobboard.webp';
 import epitale from '../assets/img/projects/epitale.webp';
 import nsa501 from '../assets/img/projects/nsa501.webp';
+import chachacook from '../assets/img/projects/chachacook.png';
+import ecommerce from '../assets/img/projects/ecommerce.png';
+
 import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDart, SiDebian, SiDiscord, SiDotnet, SiExpress, SiFlutter, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMinio, SiMysql, SiNestjs, SiNginx, SiOpenbsd, SiPhp, SiPrisma, SiReact, SiScaleway, SiSocketdotio, SiTailwindcss, SiTrello, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
+import { SiCsharp, SiDart, SiDebian, SiDiscord, SiDotnet, SiExpress, SiFlutter, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMaterialdesign, SiMinio, SiMysql, SiNestjs, SiNextdotjs, SiNginx, SiOpenbsd, SiPhp, SiPostgresql, SiPrisma, SiReact, SiScaleway, SiSocketdotio, SiSymfony, SiTailwindcss, SiTrello, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
 
 
@@ -56,6 +59,7 @@ export const projects: Project[] = [
       images: [
         infineocdataclient
       ],
+      url: 'https://github.com/PikPakPik/T-JSF-600',
       technologies: [
         {
           name: 'NodeJS',
@@ -92,6 +96,7 @@ export const projects: Project[] = [
       images: [
         epitale
       ],
+      url: 'https://github.com/PikPakPik/T-JAV-501',
       technologies: [
         {
           name: 'Java',
@@ -112,6 +117,7 @@ export const projects: Project[] = [
       images: [
         jobboard
       ],
+      url: 'https://github.com/PikPakPik/T-WEB-500',
       technologies: [
         {
           name: 'React',
@@ -261,6 +267,7 @@ export const projects: Project[] = [
       id: 5,
       name: 'Bot Discord',
       description: 'Bot Discord pour le serveur de l\'entreprise Prisel, permettant de gérer les rôles et les salons, ou encore de faire des sondages.',
+      url: 'https://github.com/PikPakPik/Prisel.fr-Bot-Discord',
       image: discordbot,
       images: [
         discordbot
@@ -305,5 +312,70 @@ export const projects: Project[] = [
         }
       ],
       homePage: true
+    },
+    {
+      id: 11,
+      name: 'Chacha-Cooking',
+      description: 'Site de recette de cuisine avec des recettes de cuisine et des commentaires. Projet personnel.',
+      image: chachacook,
+      images: [
+        chachacook
+      ],
+      technologies: [
+        {
+          name: 'NextJS',
+          icon: SiNextdotjs
+        },
+        {
+          name: 'PostgreSQL',
+          icon: SiPostgresql
+        },
+        {
+          name: 'TypeScript',
+          icon: SiTypescript
+        },
+        {
+          name: 'Tailwind',
+          icon: BiLogoTailwindCss
+        }
+      ],
+      homePage: false
+    },
+    {
+      id: 12,
+      name: 'ECommerce',
+      description: 'Site e-commerce avec des produits et une panier. Projet réalisé dans le cadre de ma formation à EPITECH.',
+      url: 'https://github.com/PikPakPik/T-WEB-600-NAN_4',
+      image: ecommerce,
+      images: [
+        ecommerce
+      ],
+      technologies: [
+        {
+          name: 'React',
+          icon: BiLogoReact
+        },
+        {
+          name: 'TypeScript',
+          icon: SiTypescript
+        },
+        {
+          name: 'MaterialUI',
+          icon: SiMaterialdesign
+        },
+        {
+          name: 'PHP',
+          icon: SiPhp
+        },
+        {
+          name: 'Symfony',
+          icon: SiSymfony
+        },
+        {
+          name: 'PostgreSQL',
+          icon: SiPostgresql
+        }
+      ],
+      homePage: false
     }
   ]
