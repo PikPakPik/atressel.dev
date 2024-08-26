@@ -1,0 +1,57 @@
+{
+    "name": "Epitech MSC-2026",
+    "subtitle": "A source for apps from Epitech MSC-2026",
+    "description": "This is a source for apps from Epitech MSC-2026.",
+    "iconURL": "https://usbeketrica.com/media/496/download/epitechlogo.png?v=3",
+    "headerURL": "https://newsroom.ionis-group.com/wp-content/uploads/2023/09/EPI-LOGO-ACCROCHE-2023-QUADRI.png",
+    "website": "https://atressel.dev",
+    "tintColor": "#0091d3",
+    "featuredApps": [
+        "fr.tdev600nan1.smarthike"
+    ],
+    "apps": [
+        {
+            "name": "Smart'Hike",
+            "bundleIdentifier": "fr.tdev600nan1.smarthike",
+            "developerName": "Epitech MSC-2026 Team 1",
+            "subtitle": "A simple app that helps you track your hikes.",
+            "localizedDescription": "SmartHike is a simple app that helps you track your hikes.",
+            "iconURL": "https://atressel.dev/smarthike/logo.png",
+            "tintColor": "#5CA399",
+            "screenshots": [
+                "https://atressel.dev/smarthike/screenshot1.png",
+                "https://atressel.dev/smarthike/screenshot2.png"
+            ],
+            "versions": [
+                {
+                    "version": "1.0",
+                    "date": "2024-08-26T10:00:00-07:00",
+                    "size": 1000000,
+                    "downloadURL": "https://atressel.dev/smarthike/smarthike_1_0_0.ipa",
+                    "localizedDescription": "Initial release."
+                }
+            ],
+            "appPermissions": {
+                "entitlements": [
+                    "com.apple.security.application-groups",
+                    "com.apple.developer.siri"
+                ],
+                "privacy": {
+                    "NSCameraUsageDescription": "App uses camera to take photos."
+                }
+            }
+        }
+    ],
+    "news": [
+        {
+            "title": "SmartHike",
+            "identifier": "app_update",
+            "caption": "SmartHike is a simple app that helps you track your hikes.",
+            "date": "2024-08-26T10:00:00-07:00",
+            "tintColor": "#00561b",
+            "imageURL": "https://atressel.dev/smarthike/logo.png",
+            "notify": false,
+            "appID": "fr.tdev600nan1.smarthike"
+        }
+    ]
+}
