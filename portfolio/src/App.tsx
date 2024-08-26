@@ -13,18 +13,16 @@ function App() {
 
   return (
     <>
-      <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Layout><Home /></Layout>} />
+          <Route path="/home" element={<Layout><Home /></Layout>} />
           <Route path="/projects">
-            <Route path="/projects" element={<Projects />} />
-            <Route path=":projectId" element={<ShowProject />} />
+            <Route path="/projects" element={<Layout><Projects /></Layout>} />
+            <Route path=":projectId" element={<Layout><ShowProject /></Layout>} />
           </Route>
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Layout><About /></Layout>} />
           <Route path="/smarthike/*" element={<SmartHike />} /> 
         </Routes>
-      </Layout>
     </>
   );
 }
