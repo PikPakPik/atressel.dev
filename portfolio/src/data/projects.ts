@@ -18,9 +18,12 @@ import epitale from '../assets/img/projects/epitale.webp';
 import nsa501 from '../assets/img/projects/nsa501.webp';
 import chachacook from '../assets/img/projects/chachacook.png';
 import ecommerce from '../assets/img/projects/ecommerce.png';
-
+import smarthike from '../assets/img/projects/smarthike/smarthike1.webp';
+import smarthike2 from '../assets/img/projects/smarthike/smarthike2.webp';
+import smarthike3 from '../assets/img/projects/smarthike/smarthike3.webp';
+import smarthike4 from '../assets/img/projects/smarthike/smarthike4.webp';
 import { BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiSolidData } from "react-icons/bi";
-import { SiCsharp, SiDart, SiDebian, SiDiscord, SiDotnet, SiExpress, SiFlutter, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMaterialdesign, SiMinio, SiMysql, SiNestjs, SiNextdotjs, SiNginx, SiOpenbsd, SiPhp, SiPostgresql, SiPrisma, SiReact, SiScaleway, SiSocketdotio, SiSymfony, SiTailwindcss, SiTrello, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
+import { SiCsharp, SiDart, SiDebian, SiDiscord, SiDotnet, SiExpress, SiFlutter, SiFreebsd, SiGitlab, SiGradle, SiGraphql, SiMaterialdesign, SiMinio, SiMysql, SiNestjs, SiNextdotjs, SiNginx, SiOpenbsd, SiOpenstreetmap, SiPhp, SiPostgresql, SiPrisma, SiPython, SiReact, SiScaleway, SiSocketdotio, SiSymfony, SiTailwindcss, SiTrello, SiTypescript, SiUikit, SiWindows10 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
 
 
@@ -377,5 +380,37 @@ export const projects: Project[] = [
         }
       ],
       homePage: false
+    },
+    {
+      id: 13,
+      name: 'Smart\'Hike',
+      description: 'Application mobile permettant de trouver des randonnées en fonction de critères choisis par l\'utilisateur. Projet de fin d\'année dans le cadre de ma formation à EPITECH.',
+      image: smarthike,
+      images: [
+        smarthike,
+        smarthike2,
+        smarthike3,
+        smarthike4
+      ],
+      url: 'https://github.com/PikPakPik/T-DEV-600-NAN_3',
+      technologies: [
+        {
+          name: 'Flutter',
+          icon: SiFlutter
+        },
+        {
+          name: 'Dart',
+          icon: SiDart
+        },
+        {
+          name: 'Python',
+          icon: SiPython
+        },
+        {
+          name: 'OpenStreetMap',
+          icon: SiOpenstreetmap
+        }
+      ],
+      homePage: false
     }
-  ]
+]
