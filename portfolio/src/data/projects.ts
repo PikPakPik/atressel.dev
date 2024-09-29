@@ -392,7 +392,7 @@ export const projects: Project[] = [
         smarthike3,
         smarthike4
       ],
-      url: 'https://github.com/PikPakPik/T-DEV-600-NAN_3',
+      url: 'https://github.com/PikPakPik/T-YEP-600',
       technologies: [
         {
           name: 'Flutter',
