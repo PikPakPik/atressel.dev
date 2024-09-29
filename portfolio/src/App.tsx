@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ShowProject from './components/Projects/ShowProject';
 import About from './pages/About';
-import SmartHike from './pages/SmartHike';
 
 function App() {
 
@@ -21,7 +20,6 @@ function App() {
             <Route path=":projectId" element={<Layout><ShowProject /></Layout>} />
           </Route>
           <Route path="/about" element={<Layout><About /></Layout>} />
-          <Route path="/smarthike/*" element={<SmartHike />} /> 
         </Routes>
     </>
   );
